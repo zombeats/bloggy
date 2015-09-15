@@ -1,0 +1,78 @@
+<aside class="blog-sidebar">
+
+    {{!
+        Sidebar contains widgets for both main blog and dev blog.
+        They are conditionally shown/hidden via code injection.
+    }}
+
+    <section class="blog-subscribe blog-subscribe-main widget">
+        <h3>Join Thousands</h3>
+        <p>of subscribers who get fresh content from us once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-subscribe blog-subscribe-dev widget">
+        <h3>Dev Updates</h3>
+        <p>The latest development news in your inbox once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-text blog-text-dev widget">
+        <p>All the things:</p>
+        <ul>
+            <li><a href="https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md">Contributing Guide</a></li>
+            <li><a href="https://trello.com/b/EceUgtCL/ghost-roadmap">Official Roadmap</a></li>
+            <li><a href="https://ghost.org/slack/">Slack developer chat</a></li>
+            <li>Meetings: Tuesdays, 17:30 UTC</li>
+        </ul>
+    </section>
+
+    <section class="twitter-box twitter-box-dev widget">
+        <a class="twitter-box-profilepic" href="http://twitter.com/TryGhost_Dev"><img src="{{asset "images/ghostdev.png"}}" alt="Twitter profile picture" /></a>
+        <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
+        <div class="twitter-box-content">
+            <h4>Ghost Dev</h4>
+            <p>Development community updates for @TryGhost.</p>
+            <a href="https://twitter.com/TryGhost_Dev" class="twitter-follow-button" data-show-count="true">Follow @TryGhost_Dev</a>
+        </div>
+    </section>
+
+    <section class="popular-posts widget">
+        <h3>Our <mark>Top Posts</mark> Right Now</h3>
+        {{!
+            Yep this is static. Soz. You were probably hoping for something fancy.
+        }}
+        <ol>
+            <li><a href="http://blog.ghost.org/fastest-way-to-blog/"><span class="number" aria-hidden="true">1</span>The Single Greatest Method for Immediately Increasing Your Blog Post Production Speed by 600%</a></li>
+            <li><a href="http://blog.ghost.org/great-blog-post-ideas/"><span class="number" aria-hidden="true">2</span>How To Come up with Great Ideas for Blog Posts, Every Single Time</a></li>
+            <li><a href="http://blog.ghost.org/writing-tools/"><span class="number" aria-hidden="true">3</span>13 Writing Tools To Enhance The Quality of Your Blog</a></li>
+            <li><a href="http://blog.ghost.org/markdown/"><span class="number" aria-hidden="true">4</span>How to Write Faster, Better &amp; Longer: The Ultimate Guide to Markdown</a></li>
+            <li><a href="http://blog.ghost.org/distributed-team-tools/"><span class="number" aria-hidden="true">5</span>11 Tools That Allow us to Work from Anywhere on Earth as a Distributed Company</a></li>
+        </ol>
+    </section>
+
+    <section class="twitter-box twitter-box-main widget">
+        <a class="twitter-box-profilepic" href="http://twitter.com/TryGhost"><img src="{{asset "images/twitterpic.png"}}" alt="Twitter profile picture" /></a>
+        <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
+        <div class="twitter-box-content">
+            <h4>Ghost</h4>
+            <p>A non-profit, open source blogging platform. A movement to revolutionise the world of online publishing.</p>
+            <a href="https://twitter.com/TryGhost" class="twitter-follow-button" data-show-count="true">Follow @TryGhost</a>
+        </div>
+    </section>
+
+    <a class="ghost-love widget" href="https://ghost.org">
+        <h3>Want a blog like this? <span class="highlight">Try Ghost</span></h3>
+        <h4>The internet's most simple, most focused publishing platform</h4>
+        <div class="ghost-love-button">Test it out in seconds</div>
+    </a>
+
+    <section class="facebook-box widget">
+        <div class="fb-like-box" data-href="https://www.facebook.com/Ghost" data-width="290" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+    </section>
+
+    <section class="gplus-box widget">
+        <div class="g-page" data-href="//plus.google.com/u/0/114465948129362706086" data-theme="dark" data-layout="landscape" data-showtagline="false" data-rel="publisher"></div>
+    </section>
+
+</aside>

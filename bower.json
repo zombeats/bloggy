@@ -1,0 +1,40 @@
+{
+  "name": "Itch",
+  "description": "Ghost theme for brands",
+  "homepage": "https://github.com/kikobeats/Itch",
+  "version": "0.0.0",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kikobeats/Itch"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/Itch/issues"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "uno",
+    "zen",
+    "elegant",
+    "minimalism"
+  ],
+  "dependencies": {
+    "fitvids": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor ",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "compass-breakpoint": "breakpoint-sass#~2.6.1"
+  }
+}
