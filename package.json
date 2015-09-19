@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": "Kikobeats/Itch",
@@ -14,12 +14,11 @@
     "url": "https://github.com/Kikobeats/Itch/issues"
   },
   "keywords": [],
-  "dependencies": {
-    "breakpoint-sass": "^2.6.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "breakpoint-sass": "*",
     "browser-sync": "*",
-    "coffee-script": "^1.10.0",
+    "coffee-script": "*",
     "gulp": "*",
     "gulp-add-src": "*",
     "gulp-autoprefixer": "*",
@@ -33,7 +32,7 @@
     "gulp-strip-css-comments": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
-    "underscore.string": "^3.2.2"
+    "underscore.string": "*"
   },
   "engines": {
     "node": ">= 0.10.0",
