@@ -361,7 +361,7 @@ h6 a {
     font-weight: normal;
 
     color: #fff;
-    background: #ffc336;
+    background: $yellow;
   }
 
   ol {
@@ -1250,4 +1250,17 @@ pre[class*="language-"] {
 
 .token.entity {
   cursor: help;
+}
+
+.tags {
+  vertical-align: text-bottom;
+  > a {
+    padding: 0.167rem 0.5rem;
+    font-size: .55rem;
+    transition: all 350ms;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    border-radius: 0.7rem;
+    background-color: rgba($orange, .7);
+  }
 }
