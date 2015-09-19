@@ -5,19 +5,13 @@
         They are conditionally shown/hidden via code injection.
     }}
 
-    <section class="blog-subscribe blog-subscribe-main widget">
+    {{!-- <section class="blog-subscribe blog-subscribe-main widget">
         <h3>Join Thousands</h3>
         <p>of subscribers who get fresh content from us once per week.</p>
         <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
-    </section>
+    </section> --}}
 
-    <section class="blog-subscribe blog-subscribe-dev widget">
-        <h3>Dev Updates</h3>
-        <p>The latest development news in your inbox once per week.</p>
-        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
-    </section>
-
-    <section class="blog-text blog-text-dev widget">
+    {{!-- <section class="blog-text blog-text-dev widget">
         <p>All the things:</p>
         <ul>
             <li><a href="https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md">Contributing Guide</a></li>
@@ -25,20 +19,27 @@
             <li><a href="https://ghost.org/slack/">Slack developer chat</a></li>
             <li>Meetings: Tuesdays, 17:30 UTC</li>
         </ul>
-    </section>
+    </section> --}}
 
-    <section class="twitter-box twitter-box-dev widget">
-        <a class="twitter-box-profilepic" href="http://twitter.com/TryGhost_Dev"><img src="{{asset "images/ghostdev.png"}}" alt="Twitter profile picture" /></a>
-        <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
-        <div class="twitter-box-content">
-            <h4>Ghost Dev</h4>
-            <p>Development community updates for @TryGhost.</p>
-            <a href="https://twitter.com/TryGhost_Dev" class="twitter-follow-button" data-show-count="true">Follow @TryGhost_Dev</a>
-        </div>
+    <section class="slack-box widget">
+      <a class="twitter-box-profilepic" href="http://twitter.com/CWMarMenor"><img src="{{asset "images/slack.png"}}" alt="Twitter profile picture" /></a>
+      <img class="twitter-box-coverpic" src="{{asset "images/slackbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
+      <div class="slack-box-content">
+        <h4>Únete a la comunidad</h4>
+        <p>Forma parte de la más vibrante comunidad alrededor del Mar Menor.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Unirme</a>
+      </div>
     </section>
 
     <section class="popular-posts widget">
-        <h3>Our <mark>Top Posts</mark> Right Now</h3>
+      <h3>Próximo Evento</h3>
+      <a href="volvemos_a_tope_con_la_murcia_urban_sup_2015/">
+        <img src="http://3.bp.blogspot.com/-1YWpZDBcjag/VecxCz5U_eI/AAAAAAAADEA/EVPPJL0zhbw/s640/CartelMurciaUrbanSUP%2B2015%2BINFO.jpg" style="width: 60%;">
+      </a>
+    </section>
+
+    <section class="popular-posts widget">
+        <h3>Lo <mark>Más</mark> Destacado</h3>
         {{!
             Yep this is static. Soz. You were probably hoping for something fancy.
         }}
@@ -52,27 +53,27 @@
     </section>
 
     <section class="twitter-box twitter-box-main widget">
-        <a class="twitter-box-profilepic" href="http://twitter.com/TryGhost"><img src="{{asset "images/twitterpic.png"}}" alt="Twitter profile picture" /></a>
+        <a class="twitter-box-profilepic" href="http://twitter.com/CWMarMenor"><img src="{{asset "images/logo.png"}}" alt="Twitter profile picture" /></a>
         <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
         <div class="twitter-box-content">
-            <h4>Ghost</h4>
+            <h4>CWMarMenor</h4>
             <p>A non-profit, open source blogging platform. A movement to revolutionise the world of online publishing.</p>
-            <a href="https://twitter.com/TryGhost" class="twitter-follow-button" data-show-count="true">Follow @TryGhost</a>
+            <a href="https://twitter.com/CWMarMenor" class="twitter-follow-button" data-show-count="true">Seguir @CWMarMenor</a>
         </div>
     </section>
 
-    <a class="ghost-love widget" href="https://ghost.org">
+    {{!-- <a class="ghost-love widget" href="https://ghost.org">
         <h3>Want a blog like this? <span class="highlight">Try Ghost</span></h3>
         <h4>The internet's most simple, most focused publishing platform</h4>
         <div class="ghost-love-button">Test it out in seconds</div>
-    </a>
+    </a> --}}
 
     <section class="facebook-box widget">
-        <div class="fb-like-box" data-href="https://www.facebook.com/Ghost" data-width="290" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+        <div class="fb-like-box" data-href="https://www.facebook.com/cwmarmenor" data-width="290" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
     </section>
 
-    <section class="gplus-box widget">
+    {{!-- <section class="gplus-box widget">
         <div class="g-page" data-href="//plus.google.com/u/0/114465948129362706086" data-theme="dark" data-layout="landscape" data-showtagline="false" data-rel="publisher"></div>
-    </section>
+    </section> --}}
 
 </aside>

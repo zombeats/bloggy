@@ -1,0 +1,20 @@
+.button-green,
+.button-add,
+.button-add[type="submit"] {
+  background-color: $green;
+}
+
+.button-green:not(.button-loading):hover,
+.button-green:not(.button-loading):focus,
+.button-add:not(.button-loading):hover,
+.ghost-pro-ad:hover .button-add:not(.button-loading),
+.button-add:not(.button-loading):focus,
+.button-add[type="submit"]:not(.button-loading):hover,
+.ghost-pro-ad:hover [type="submit"].button-add:not(.button-loading),
+.button-add[type="submit"]:not(.button-loading):focus {
+  background: darken($green, 10%);
+}
+
+.modal-close {
+  color: $red;
+}

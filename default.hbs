@@ -36,6 +36,7 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,400,200" />
     <link rel="stylesheet" type="text/css" href="https://ghost.org/assets/application-53c891abfa2c2305e65de0c84c76e9e1.css" media="all" />
+
     <link rel="stylesheet" type="text/css" href="{{asset "css/itch.css"}}" />
 
     {{ghost_head}}
@@ -43,7 +44,7 @@
 <body class="{{body_class}}">
     <div id="fb-root"></div>
     <aside class="subscribe-banner">
-        Want to keep up to date weekly with more great posts? &nbsp;<a class="button" data-toggle="modal" data-target="#blogsubscribe">Subscribe</a>
+        ¿Te gustaría recibir el contenido en tu correo semanalmente? &nbsp;<a class="button" data-toggle="modal" data-target="#blogsubscribe">Subscríbete</a>
     </aside>
     <header id="global-header" class="global-header navbar">
        <nav role="navigation">
@@ -76,14 +77,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h4 class="modal-title">The latest content, once per week.</h4>
+                    <h4 class="modal-title">Una vez a la semana, recibe lo último.</h4>
                     <a class="modal-close" data-dismiss="modal" aria-hidden="true" href="#"><span class="hidden">Close</span></a>
                 </header>
                 <div class="modal-body">
                     <form action="{{! populated via code injection}}" method="post">
-                        <input id="fieldEmail" name="{{! populated via code injection}}" type="email" placeholder="Your email address" required />
-                        <button class="button-add wide" type="submit">Send me the good stuff</button>
-                        <p><strong>Privacy policy:</strong> No spam. No jibber jabber. Unsubscribe any time.</p>
+                        <input id="fieldEmail" name="{{! populated via code injection}}" type="email" placeholder="Tu correo electrónico" required />
+                        <button class="button-add wide" type="submit">Subscribirse</button>
+                        <p><strong>Política de Privacidad:</strong> No spam ni publicidad. Desunscríbete en cualquier momento.</p>
                     </form>
                 </div>
             </div>
@@ -109,10 +110,8 @@
             <span class="poweredby"><img alt="Ghost" src="https://ghost.org/assets/logo-minidigitalocean-1bb39c0755ac79befc56ca39d7889eb5.png"> Powered <em>by</em> <a href="https://digitalocean.com" target="_blank">DigitalOcean</a></span>
 
             <ul id="social-menu">
-                <li class="github"><a href="https://github.com/tryghost/Ghost"><span class="hidden">Github</span></a></li>
-                <li class="twitter"><a href="https://twitter.com/tryghost"><span class="hidden">Twitter</span></a></li>
-                <li class="gplus"><a href="https://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><span class="hidden">Google+</span></a></li>
-                <li class="facebook"><a href="https://www.facebook.com/ghost"><span class="hidden">Facebook</span></a></li>
+                <li class="twitter"><a href="https://twitter.com/CWMarMenor"><span class="hidden">Twitter</span></a></li>
+                <li class="facebook"><a href="https://www.facebook.com/CWMarMenor"><span class="hidden">Facebook</span></a></li>
             </ul>
 
         </nav>
@@ -122,15 +121,14 @@
     {{ghost_foot}}
 
     <script type="text/javascript">
-        function replaceHeader (content) {
-            $(document).ready(function() {
-                $("#global-header > nav > .wrapper").replaceWith(content);
-                $("#global-header > nav > .wrapper").fadeIn();
-            });
-        }
+      function replaceHeader (content) {
+        $(document).ready(function() {
+          $("#global-header > nav > .wrapper").replaceWith(content);
+          $("#global-header > nav > .wrapper").fadeIn();
+        });
+      }
     </script>
     <script src="https://ghost.org/navigation/"></script>
-
     <script type="text/javascript" src="https://ghost.org/assets/application-f70a08abb1fd9fbfdd4ae25ddd2c3d6b.js"></script>
     <script type="text/javascript" src="{{asset "js/itch.js"}}"></script>
 

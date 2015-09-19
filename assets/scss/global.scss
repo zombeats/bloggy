@@ -117,9 +117,7 @@ h6 a {
 .vertical {
   position: relative;
   top: -2%;
-
   display: table-cell;
-
   vertical-align: middle;
 }
 
@@ -454,7 +452,6 @@ h6 a {
   }
 }//.blog-subscribe
 
-
 //the modal
 #blogsubscribe {
   .modal-header {
@@ -540,17 +537,18 @@ h6 a {
   text-align: center;
 
   border-radius: 100%;
-  background: $darkgrey;
+  background: $lightgrey;
 
   img {
-    width: 40px;
+    width: 90px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 6px;
   }
 }
 
 .twitter-box-dev .twitter-box-profilepic {
-  background: #256097;
+  background-color: $lightgrey;
+  border: 5px solid white;
 
   img {
     width: 70px;
@@ -578,6 +576,32 @@ h6 a {
 
     color: $grey;
   }
+}
+
+.slack-box {
+  @extend .twitter-box;
+  @extend .twitter-box-dev;
+}
+
+.slack-box-content {
+  @extend .twitter-box-content;
+
+  > h4 {
+    margin: 1rem;
+  }
+
+  > p {
+    margin: 2rem 0;
+  }
+
+  > a {
+    margin: 1rem 0;
+  }
+
+  .button-add {
+    width: 60%;
+  }
+
 }
 
 .twitter-follow-button {
@@ -947,7 +971,7 @@ h6 a {
   text-align: center;
 
   color: #fff;
-  background: $red;
+  background: $green;
 
   .button {
     color: #fff;
@@ -1129,9 +1153,6 @@ pre[class*="language-"] {
   -webkit-hyphens: none;
      -moz-hyphens: none;
           hyphens: none;
-
-  color: #f8f8f2;
-  text-shadow: 0 1px rgba(0, 0, 0, .3);
 
   direction: ltr;
       -ms-hyphens: none;
