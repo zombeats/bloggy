@@ -1,0 +1,18 @@
+<nav role="navigation">
+  <div class="wrapper">
+    <a class="ghost-logo animated-logo" href="/" >
+      <span>CWMarMenor</span>
+    </a>
+    <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="hidden">Menu</span>
+    </button>
+
+    <ul id="main-menu" class="navbar-collapse collapse">
+      {{#foreach navigation}}
+      <li class="nav-{{slug}} {{#if current}} nav-current{{/if}}">
+        <a href="{{this.url}}">{{label}}</a>
+      </li>
+      {{/foreach}}
+    </ul>
+  </div>
+</nav>

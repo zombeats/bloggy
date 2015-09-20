@@ -177,6 +177,8 @@ h6 a {
     letter-spacing: 0;
 
     color: #fff;
+    display: inline-block;
+    padding: .5rem 2rem;
 
     @include breakpoint(500px) {
       font-size: 1.8rem;
@@ -185,6 +187,7 @@ h6 a {
       font-size: 2.2rem;
     }
     @include breakpoint(850px) {
+      margin: 96px 96px 96px 56px;
       font-size: 2.6rem;
     }
   }
@@ -1063,8 +1066,7 @@ h6 a {
   position: relative;
 
   width: 80%;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 3rem 0;
   margin: 0 auto;
 }
 
@@ -1074,7 +1076,7 @@ h6 a {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
 
-  content: "Read This Next";
+  content: "Siguiente Publicación";
   transition: all .5s ease;
   text-transform: uppercase;
 
@@ -1083,17 +1085,17 @@ h6 a {
   border-radius: 4px;
 }
 .read-next-story.prev .post:before {
-  content: "You Might Enjoy";
+  content: "Tal vez te interese";
 }
 
 .read-next-story h2 {
-  margin-top: 1rem;
+  margin-top: 3rem;
 
   color: #fff;
 }
 
 .read-next-story p {
-  margin: 5px 0 0 0;
+  margin: 3rem 0 0 0;
 
   font-weight: 200;
   line-height: 1.4em;
@@ -1264,3 +1266,38 @@ pre[class*="language-"] {
     background-color: rgba($orange, .7);
   }
 }
+
+a.ghost-logo.animated-logo {
+  background: url('/assets/images/logo.png');
+  left: 7px;
+  top: 7px;
+  width: 30px;
+  background-size: 30px, cover;
+  background-repeat: no-repeat;
+  display: none;
+
+  @include breakpoint(660px) {
+    display: inline;
+    }
+}
+
+.ghost-logo {
+  &:before {
+    content: '';
+  }
+  &:after {
+    content: "CWMarMenor";
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+}
+
+#global-footer .poweredby a {
+  text-decoration: underline;
+}
+
+.global-header {
+  min-height: 30px;
+}
+
+// signup
