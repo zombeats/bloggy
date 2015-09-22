@@ -777,8 +777,8 @@ h6 a {
     margin-left: -15%;
   }
   @include breakpoint(1100px) {
-    width: calc(100% + 40px);
-    margin-left: -40px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
   }
 }
 
@@ -1254,6 +1254,10 @@ pre[class*="language-"] {
   cursor: help;
 }
 
+/* ==========================================================================
+ Custom
+========================================================================== */
+
 .tags {
   vertical-align: text-bottom;
   > a {
@@ -1300,4 +1304,14 @@ a.ghost-logo.animated-logo {
   min-height: 30px;
 }
 
-// signup
+li.nav-nete > a {
+  @include feature-header-button($green);
+}
+
+li.nav-enviar-noticia > a {
+  @include feature-header-button($blue);
+
+  @include breakpoint(max-width 660px, max-width 660px) {
+    margin: 15px 0 !important;
+  }
+}

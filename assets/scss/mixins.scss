@@ -1,0 +1,12 @@
+@mixin feature-header-button($color) {
+  background: rgba(white, 0.8) !important;
+  color: $color !important;
+  border: 1.5px solid $color;
+  border-radius: 2px;
+  transition: all .5s ease;
+
+  &:hover {
+    color: rgba(white, 0.8) !important;
+    background: $color !important;
+  }
+}
