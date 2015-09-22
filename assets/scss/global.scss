@@ -1310,6 +1310,7 @@ li.nav-nete > a {
 
 li.nav-enviar-noticia > a {
   @include feature-header-button($blue);
+  margin-left: 15px;
 
   @include breakpoint(max-width 660px, max-width 660px) {
     margin: 15px 0 !important;
