@@ -1,8 +1,5 @@
 ::selection {
- background: lighten($orange, 36%);
-}
-::-moz-selection {
- background: lighten($orange, 36%);
+  background: lighten($orange, 36%);
 }
 
 .button-green,
@@ -30,12 +27,22 @@
   color: $red;
 }
 
-.button-save, .button-blue, button[type="submit"], input[type="submit"] {
+.button-save,
+.button-blue,
+button[type="submit"],
+input[type="submit"] {
   background: $blue;
   box-shadow: none;
 }
 
-.button-save:not(.button-loading):hover, .button-save:not(.button-loading):focus, .button-blue:not(.button-loading):hover, .button-blue:not(.button-loading):focus, button[type="submit"]:not(.button-loading):hover, button[type="submit"]:not(.button-loading):focus, input[type="submit"]:not(.button-loading):hover, input[type="submit"]:not(.button-loading):focus {
+.button-save:not(.button-loading):hover,
+.button-save:not(.button-loading):focus,
+.button-blue:not(.button-loading):hover,
+.button-blue:not(.button-loading):focus,
+button[type="submit"]:not(.button-loading):hover,
+button[type="submit"]:not(.button-loading):focus,
+input[type="submit"]:not(.button-loading):hover,
+input[type="submit"]:not(.button-loading):focus {
   background: darken($blue, 10%);
 }
 

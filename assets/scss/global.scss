@@ -200,6 +200,10 @@ h6 a {
 .blog-content {
   float: left;
   width: 63.26531%;
+
+  &.fullscreen {
+    width: 100%;
+  }
 }
 
 .blog-sidebar {
@@ -1290,7 +1294,7 @@ a.ghost-logo.animated-logo {
     content: '';
   }
   &:after {
-    content: "CWMarMenor";
+    content: $name;
     font-size: 1.6rem;
     margin-left: 10px;
   }
@@ -1304,11 +1308,11 @@ a.ghost-logo.animated-logo {
   min-height: 30px;
 }
 
-li.nav-nete > a {
+li.nav-unete > a {
   @include feature-header-button($green);
 }
 
-li.nav-enviar-noticia > a {
+li.nav-contacto > a {
   @include feature-header-button($blue);
   margin-left: 15px;
 
