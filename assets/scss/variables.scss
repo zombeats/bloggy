@@ -6,7 +6,7 @@ $default-transition-duration : 0.3s;
 
 // Breakpoint - http://breakpoint-sass.com/
 @import "../vendor/compass-breakpoint/stylesheets/breakpoint";
-$breakpoint-default-feature  : max-width;
+@include breakpoint-set('default feature', max-width);
 
 // Max widths
 $netbook                     : 1000px;
