@@ -1,0 +1,21 @@
+<aside class="subscribe-banner">
+  ¿Te gustaría recibir el contenido en tu correo semanalmente? &nbsp;<a class="button" data-toggle="modal" data-target="#blogsubscribe">Subscríbete</a>
+</aside>
+
+<div class="modal fade" id="blogsubscribe" tabindex="-1" role="dialog" aria-labelledby="Email subscription modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h4 class="modal-title">Una vez a la semana, recibe lo último.</h4>
+        <a class="modal-close" data-dismiss="modal" aria-hidden="true" href="#"><span class="hidden">Close</span></a>
+      </header>
+      <div class="modal-body">
+        <form action="{{! populated via code injection}}" method="post">
+          <input id="fieldEmail" name="{{! populated via code injection}}" type="email" placeholder="Tu correo electrónico" required />
+          <button class="button-add wide" type="submit">Subscribirse</button>
+          <p><strong>Política de Privacidad:</strong> No spam ni publicidad. Desunscríbete en cualquier momento.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
