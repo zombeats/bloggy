@@ -33,7 +33,8 @@ src =
     main   : 'assets/scss/itch.scss'
     files  : ['assets/scss/**/**']
   js       :
-    main   : ['assets/js/src/main.js']
+    main   : [ 'assets/js/src/__init.coffee'
+               'assets/js/src/main.coffee' ]
     vendor : ['assets/js/src/prism.js'
               'assets/vendor/fitvids/jquery.fitvids.js']
   css      :
@@ -66,7 +67,7 @@ gulp.task 'css', ->
 gulp.task 'js', ->
   gulp.src src.js.main
   .pipe changed dist.js
-  #.pipe coffee()
+  .pipe coffee()
   .pipe addsrc src.js.vendor
   .pipe concat dist.name + '.js'
   .pipe uglify mangle: false
