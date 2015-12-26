@@ -5,14 +5,13 @@ window.Itch = Itch =
   is: (property, value) -> this.app.dataset[property] is value
   app: do -> document.body
 
-$ ->
-  Itch.context = ->
+  context: ->
     # get the context from the first class name of body
     # https://github.com/TryGhost/Ghost/wiki/Context-aware-Filters-and-Helpers
     className = document.body.className.split(' ')[0].split('-')[0]
     if className is '' then 'error' else className
 
-  Itch.device = ->
+  device: ->
     w = window.innerWidth
     h = window.innerHeight
     return 'mobile' if (w <= 480)
