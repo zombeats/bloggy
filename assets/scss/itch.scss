@@ -1,4 +1,15 @@
+
+/* Basic */
 @import 'variables';
 @import 'mixins';
 @import 'theme';
 @import 'global';
+
+/* Customize */
+@import 'widgets/blog-text';
+@import 'widgets/slack-box';
+@import 'widgets/ghost-love';
+@import 'widgets/twitter-box';
+@import 'widgets/popular-posts';
+@import 'widgets/blog-subscribe';
+@import 'widgets/subscribe-banner';

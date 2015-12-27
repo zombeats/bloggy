@@ -1,0 +1,71 @@
+.twitter-box {
+  position: relative;
+
+  padding: 0;
+
+  @include breakpoint(1000px) {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.twitter-box-profilepic {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+
+  text-align: center;
+
+  border-radius: 100%;
+  background: $lightgrey;
+
+  img {
+    width: 90px;
+    height: auto;
+    margin-top: 6px;
+  }
+}
+
+.twitter-box-dev .twitter-box-profilepic {
+  background-color: $lightgrey;
+  border: 5px solid white;
+
+  img {
+    width: 70px;
+    margin-top: 15px;
+  }
+}
+
+.twitter-box-content {
+  padding: 50px 10px 10px;
+
+  text-align: center;
+
+  border: #eee 1px solid;
+  border-top: none;
+
+  h4 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    margin: .8rem 0;
+
+    font-size: 1.4rem;
+    line-height: 1.5em;
+
+    color: $grey;
+  }
+}
+
+.twitter-follow-button {
+  margin: 1rem 0;
+}

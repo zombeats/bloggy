@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Subscriber Banner - Top of Blog
+   ========================================================================== */
+
+.subscribe-banner {
+  width: 100%;
+  padding: 10px 0;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  text-align: center;
+
+  color: $white;
+  background: $subscribe-banner-color;
+
+  .button {
+    color: $white;
+    background: $darkgrey;
+
+    &:hover {
+      background: #111;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

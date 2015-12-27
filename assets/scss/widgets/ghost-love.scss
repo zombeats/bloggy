@@ -1,0 +1,79 @@
+.ghost-love {
+  display: block;
+
+  text-align: center;
+
+  color: $white;
+  background: $blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1em;
+
+    color: $white;
+  }
+  .highlight {
+    display: block;
+    margin: 3rem 0 .5rem 0;
+
+    color: $white;
+
+    @include breakpoint(1000px) {
+      display: inline;
+      margin: 0;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    &:before,
+    &:after {
+      display: inline-block;
+
+      font-weight: 200;
+
+      content: "—";
+    }
+    &:before {
+      margin-right: 5px;
+    }
+    &:after {
+      margin-left: 5px;
+    }
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+
+    color: rgba(255,255,255,.8);
+  }
+}
+
+.ghost-love-button {
+  padding: 15px 10px;
+  margin: 80px -30px -30px -30px;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $white;
+  background: $red;
+
+  @include breakpoint(1000px) {
+    margin-top: 30px;
+  }
+}
+
+.ghost-love:hover .ghost-love-button {
+  background: $darkgrey;
+}

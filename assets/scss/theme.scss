@@ -1,51 +1,14 @@
-::selection {
-  background: lighten($orange, 36%);
-}
 
-.button-green,
-.button-add,
-.button-add[type="submit"] {
-  transition: all 0.5s ease;
-  background: white;
-  border: 2px solid $green;
-  color: $green;
-}
+$subscribe-banner-color   : $green;
+$selection-color          : lighten($orange, 36%);
+$tag-color                : rgba($orange, .7);
 
-.button-green:not(.button-loading):hover,
-.button-green:not(.button-loading):focus,
-.button-add:not(.button-loading):hover,
-.ghost-pro-ad:hover .button-add:not(.button-loading),
-.button-add:not(.button-loading):focus,
-.button-add[type="submit"]:not(.button-loading):hover,
-.ghost-pro-ad:hover [type="submit"].button-add:not(.button-loading),
-.button-add[type="submit"]:not(.button-loading):focus {
-  background: $green;
-  color: white;
-}
+$feature-one-color        : $green;
+$feature-two-color        : $blue;
 
-.modal-close {
-  color: $red;
-}
+$title-hover-color        : $blue;
 
-.button-save,
-.button-blue,
-button[type="submit"],
-input[type="submit"] {
-  background: $blue;
-  box-shadow: none;
-}
+$header-color             : #303538;
 
-.button-save:not(.button-loading):hover,
-.button-save:not(.button-loading):focus,
-.button-blue:not(.button-loading):hover,
-.button-blue:not(.button-loading):focus,
-button[type="submit"]:not(.button-loading):hover,
-button[type="submit"]:not(.button-loading):focus,
-input[type="submit"]:not(.button-loading):hover,
-input[type="submit"]:not(.button-loading):focus {
-  background: darken($blue, 10%);
-}
-
-.blog-header h1 {
-  background-color: rgba(#8BC34A, .7);
-}
+/* widgets */
+/** advertising **/

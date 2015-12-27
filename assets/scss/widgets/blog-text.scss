@@ -1,0 +1,10 @@
+.blog-text {
+  color: $midgrey;
+  border: $lightbrown 1px solid;
+  background: lighten($lightbrown, 4%);
+
+  ul {
+    padding: 0 0 0 1.2em;
+    margin: 0;
+  }
+}

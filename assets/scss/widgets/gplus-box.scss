@@ -1,0 +1,7 @@
+gplus-box {
+  padding: 0;
+
+  @include breakpoint(1000px) {
+    display: none;
+  }
+}

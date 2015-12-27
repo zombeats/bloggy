@@ -1,0 +1,25 @@
+.slack-box {
+  @extend .twitter-box;
+  @extend .twitter-box-dev;
+}
+
+.slack-box-content {
+  @extend .twitter-box-content;
+
+  > h4 {
+    margin: 1rem;
+  }
+
+  > p {
+    margin: 2rem 0;
+  }
+
+  > a {
+    margin: 1rem 0;
+  }
+
+  .button-add {
+    width: 60%;
+  }
+
+}
