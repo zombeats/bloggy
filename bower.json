@@ -22,7 +22,8 @@
     "minimalism"
   ],
   "dependencies": {
-    "fitvids": "*"
+    "fitvids": "*",
+    "fastclick": "~1.0.6"
   },
   "ignore": [
     "**/.*",

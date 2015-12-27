@@ -36,7 +36,8 @@ src =
     main   : [ 'assets/js/src/__init.coffee'
                'assets/js/src/main.coffee' ]
     vendor : ['assets/js/src/prism.js'
-              'assets/vendor/fitvids/jquery.fitvids.js']
+              'assets/vendor/fitvids/jquery.fitvids.js'
+              'assets/vendor/fastclick/lib/fastclick.js']
   css      :
     main   : 'assets/css/' + dist.name + '.css'
     vendor : []
