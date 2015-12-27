@@ -955,11 +955,11 @@ a.ghost-logo.animated-logo {
 }
 
 li.nav-unete > a {
-  @extend feature-header-button($feature-one-color);
+  @include feature-header-button($feature-one-color);
 }
 
 li.nav-contacto > a {
-  @extend feature-header-button($feature-two-color);
+  @include feature-header-button($feature-two-color);
   margin-left: 15px;
 
   @include breakpoint(max-width 660px, max-width 660px) {
