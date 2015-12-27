@@ -35,7 +35,9 @@ src =
   js       :
     main   : [ 'assets/js/src/__init.coffee'
                'assets/js/src/main.coffee' ]
-    vendor : ['assets/js/src/prism.js'
+    vendor : ['assets/js/src/application.js'
+              'assets/js/src/jquery.smartresize.js'
+              'assets/js/src/prism.js'
               'assets/vendor/fitvids/jquery.fitvids.js'
               'assets/vendor/fastclick/lib/fastclick.js']
   css      :
