@@ -10,11 +10,11 @@
     3.  Utilities
     4.  General
     5.  Single Post
-    6.  Third Party Elements
-    7.  Pagination
-    8.  Footer
-    9.  Media Queries (Tablet)
-    10. Media Queries (Mobile)
+    6.  Pagination
+    7.  Footer
+    8.  Media Queries (Tablet)
+    9.  Media Queries (Mobile)
+    10. Others
 
  */
 
@@ -38,7 +38,6 @@ h6 {
 h1 {
   font-size: 4rem;
   line-height: 1.2em;
-
   text-indent: -3px;
   letter-spacing: -2px;
 
@@ -49,14 +48,11 @@ h1 {
 
 h2 {
   padding-top: 0;
-
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2em;
-
   text-indent: -2px;
   letter-spacing: -1px;
-
   border: 0;
 
   @include breakpoint(500px) {
@@ -95,13 +91,11 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: underline;
-
   color: $darkgrey;
 
   &:hover {
     text-decoration: none;
-
-    color: $title-hover-color;
+    color: $link-hover-color;
     box-shadow: none;
   }
 }
@@ -128,15 +122,12 @@ h6 a {
 
 .blog-header {
   position: relative;
-
   display: table;
   width: 100%;
   height: 300px;
   padding: 0 60px;
   margin: -50px -60px 50px;
-
   text-align: center;
-
   color: $white;
   background: $header-color no-repeat center center;
   background-size: cover;
@@ -147,17 +138,20 @@ h6 a {
     padding: 0 15px;
     margin: -15px -15px 15px;
   }
+
   @include breakpoint(650px) {
     width: 114%;
     height: 250px;
     padding: 0 11%;
     margin: -11% 0 11% -18%;
   }
+
   @include breakpoint(850px) {
     width: 114%;
     padding: 0 11%;
     margin: -11% 0 11% -18%;
   }
+
   @include breakpoint(1100px) {
     padding: 0 40px;
     margin: -30px -40px 30px;
@@ -166,12 +160,9 @@ h6 a {
   h1 {
     max-width: 640px;
     margin: 0 auto;
-
     font-size: 2.8rem;
     font-weight: 200;
-
     letter-spacing: 0;
-
     color: $white;
     display: inline-block;
     padding: .5rem 2rem;
@@ -179,15 +170,18 @@ h6 a {
     @include breakpoint(500px) {
       font-size: 1.8rem;
     }
+
     @include breakpoint(650px) {
       font-size: 2.2rem;
     }
+
     @include breakpoint(850px) {
       margin: 96px 96px 96px 56px;
       font-size: 2.6rem;
     }
   }
 }
+
 // Hide header on paginated pages
 .archive-template .blog-header {
   display: none;
@@ -222,7 +216,6 @@ h6 a {
 
   p {
     margin: 0 0 15px 0;
-
     font-size: 17px;
     font-weight: 200;
     line-height: 1.3em;
@@ -239,6 +232,7 @@ h6 a {
     padding: 30px 40px;
   }
 }
+
 @include breakpoint(1000px) {
   .blog-content,
   .blog-sidebar {
@@ -246,25 +240,29 @@ h6 a {
     width: 100%;
   }
 }
+
 @include breakpoint(850px) {
   .page-wrapper {
     padding: 8% 11%;
   }
+
   .blog-content {
     margin-right: 0;
   }
+
   .blog-sidebar {
     position: static;
-
     width: 100%;
     margin-top: 30px;
   }
 }
+
 @include breakpoint(650px) {
   .page-wrapper {
     padding: 6% 9%;
   }
 }
+
 @include breakpoint(400px) {
   .page-wrapper {
     padding: 15px;
@@ -273,7 +271,6 @@ h6 a {
 
 .post {
   margin-bottom: 40px;
-
   border-bottom: darken($lightgrey, 5%) 1px dashed;
 
   @include breakpoint(500px) {
@@ -299,9 +296,7 @@ h6 a {
 
 .post-meta {
   margin: 5px 0;
-
   font-size: 1.4rem;
-
   color: #9eabb3;
 
   .author-img {
@@ -322,7 +317,6 @@ h6 a {
 
 .post-meta a {
   text-decoration: none;
-
   color: #9eabb3;
 }
 
@@ -335,6 +329,7 @@ h6 a {
 
   @include breakpoint(500px) {
     margin: 1.6em 0;
+
     .right {
       display: none;
     }
@@ -344,10 +339,8 @@ h6 a {
 .read-more {
   min-height: 0;
   padding: .3em .5em;
-
   font-size: 10px;
   line-height: 12px;
-
   vertical-align: top;
 
   @include breakpoint(500px) {
@@ -362,7 +355,6 @@ h6 a {
 .post-template {
   .post {
     margin-bottom: 0;
-
     border-bottom: none;
   }
 }
@@ -393,16 +385,19 @@ h6 a {
     margin-right: -15px;
     margin-left: -15px;
   }
+
   @include breakpoint(650px) {
     width: 122%;
     margin-right: -11%;
     margin-left: -11%;
   }
+
   @include breakpoint(850px) {
     width: 130%;
     margin-right: -15%;
     margin-left: -15%;
   }
+
   @include breakpoint(1100px) {
     width: calc(100% + 30px);
     margin-left: -15px;
@@ -432,7 +427,6 @@ h6 a {
 .pocket-btn {
   display: inline-block;
   margin-right: -10px;
-
   vertical-align: top;
 }
 
@@ -442,10 +436,8 @@ h6 a {
 
 .author {
   position: relative;
-
   padding: 30px;
   margin: 1.6em 0;
-
   border: $lightgrey 2px dashed;
   background: lighten($lightgrey, 5%);
 
@@ -453,10 +445,8 @@ h6 a {
     position: absolute;
     top: 30px;
     left: 30px;
-
     width: 80px;
     height: 80px;
-
     border: $white 5px solid;
   }
 }
@@ -470,7 +460,6 @@ h6 a {
 
   p {
     margin: 1rem 0 0 0;
-
     font-size: 1.4rem;
   }
 }
@@ -478,15 +467,17 @@ h6 a {
 @include breakpoint(550px) {
   .author {
     padding: 20px;
-
     text-align: center;
   }
+
   .author .author-img {
     position: static;
   }
+
   .author-meta {
     margin-left: 0;
   }
+
   .author-meta p {
     font-size: 1.3rem;
   }
@@ -514,15 +505,12 @@ h6 a {
    ========================================================================== */
 
 /* The main wrapper for our pagination links */
+
 .pagination {
   position: relative;
-
   margin: 40px auto 20px;
-
   font-size: 1.3rem;
-
   text-align: center;
-
   color: #9eabb3;
 }
 
@@ -535,22 +523,19 @@ h6 a {
 }
 
 /* Push the previous/next links out to the left/right */
+
 .older-posts,
 .newer-posts {
   position: absolute;
-
   display: inline-block;
   padding: 5px 15px;
-
   transition: border ease .3s;
   text-decoration: none;
-
   border: #ebf2f6 2px solid;
   border-radius: 30px;
 
   @include breakpoint(500px) {
     position: static;
-
     margin: 10px 0;
   }
 }
@@ -580,10 +565,10 @@ h6 a {
 //misc hack - no idea why this is needed, but it is
 @media (min-width: 768px) {
   .navbar-collapse.closed {
-    display: block!important;
-    height: auto!important;
+    display: block !important;
+    height: auto !important;
     padding-bottom: 0;
-    overflow: visible!important;
+    overflow: visible !important;
   }
 }
 
@@ -592,54 +577,37 @@ h6 a {
    ========================================================================== */
 
 .read-next {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   margin: 4rem 0;
   overflow: hidden;
-
   border-radius: 5px;
-
-  -webkit-align-items: stretch;
-          align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .read-next-story {
   position: relative;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   min-width: 50%;
   overflow: hidden;
-
   text-align: center;
   text-decoration: none;
-
   color: $white;
   background: #222 no-repeat center center;
   background-size: cover;
-
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
+
 .read-next-story:hover {
   text-decoration: none;
 }
+
 .read-next-story:hover:before {
   transition: all .2s ease;
-
-  background: rgba(0,0,0,.8);
+  background: rgba(0, 0, 0, .8);
 }
+
 .read-next-story:hover .post:before {
   transition: all .2s ease;
-
   color: #222;
   background: $white;
 }
@@ -650,18 +618,14 @@ h6 a {
   right: 0;
   bottom: 0;
   left: 0;
-
   display: block;
-
   content: "";
   transition: all .5s ease;
-
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, .7);
 }
 
 .read-next-story .post {
   position: relative;
-
   width: 80%;
   padding: 3rem 0;
   margin: 0 auto;
@@ -669,38 +633,34 @@ h6 a {
 
 .read-next-story .post:before {
   padding: 4px 10px 5px;
-
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
-
   content: "Siguiente Publicación";
   transition: all .5s ease;
   text-transform: uppercase;
-
-  color: rgba(255,255,255,.8);
-  border: rgba(255,255,255,.5) 1px solid;
+  color: rgba(255, 255, 255, .8);
+  border: rgba(255, 255, 255, .5) 1px solid;
   border-radius: 4px;
 }
+
 .read-next-story.prev .post:before {
   content: "Tal vez te interese";
 }
 
 .read-next-story h2 {
   margin-top: 3rem;
-
   color: $white;
 }
 
 .read-next-story p {
   margin: 3rem 0 0 0;
-
   font-weight: 200;
   line-height: 1.4em;
-
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
 }
 
 /* Special styles for posts with no cover images */
+
 .read-next-story.no-cover {
   background: $white;
 }
@@ -710,8 +670,8 @@ h6 a {
 }
 
 .read-next-story.no-cover .post:before {
-  color: rgba(0,0,0,.5);
-  border-color: rgba(0,0,0,.2);
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .2);
 }
 
 .read-next-story.no-cover:hover .post:before {
@@ -720,18 +680,18 @@ h6 a {
 }
 
 .read-next-story.no-cover h2 {
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, .8);
 }
 
 .read-next-story.no-cover p {
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, .5);
 }
 
 /* if there are two posts without covers, put a border between them */
-.read-next-story.no-cover + .read-next-story.no-cover {
-  border-left: rgba(0,0,100,.04) 1px solid;
-}
 
+.read-next-story.no-cover + .read-next-story.no-cover {
+  border-left: rgba(0, 0, 100, .04) 1px solid;
+}
 
 /* ==========================================================================
    Prism
@@ -741,28 +701,21 @@ code[class*="language-"],
 pre[class*="language-"] {
   font-family: Consolas, Monaco, "Andale Mono", monospace;
   line-height: 1.5;
-
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  -moz-tab-size: 4;
-    -o-tab-size: 4;
-       tab-size: 4;
-  -webkit-hyphens: none;
-     -moz-hyphens: none;
-          hyphens: none;
-
+  tab-size: 4;
+  hyphens: none;
   direction: ltr;
-      -ms-hyphens: none;
 }
 
 /* Code blocks */
+
 pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
-
   border-radius: .3em;
 }
 
@@ -772,9 +725,9 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
+
 :not(pre) > code[class*="language-"] {
   padding: .1em;
-
   border-radius: .3em;
 }
 
@@ -843,6 +796,7 @@ pre[class*="language-"] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
@@ -857,6 +811,7 @@ pre[class*="language-"] {
 
 .tags {
   vertical-align: text-bottom;
+
   > a {
     padding: 0.167rem 0.5rem;
     font-size: .55rem;
@@ -864,7 +819,7 @@ pre[class*="language-"] {
     text-transform: uppercase;
     color: #f8f8f8;
     border-radius: 0.7rem;
-    background-color: $tag-color
+    background-color: $tag-color;
   }
 }
 
@@ -879,13 +834,14 @@ a.ghost-logo.animated-logo {
 
   @include breakpoint(660px) {
     display: inline;
-    }
+  }
 }
 
 .ghost-logo {
   &:before {
     content: '';
   }
+
   &:after {
     content: $name;
     font-size: 1.6rem;
