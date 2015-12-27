@@ -12,8 +12,8 @@ section {
 
 html {
   font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -64,7 +64,7 @@ button {
 }
 
 button {
-  -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
 }
 
@@ -87,8 +87,8 @@ input::-moz-focus-inner {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-          transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 
 .fade.in {
@@ -107,8 +107,8 @@ input::-moz-focus-inner {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-          transition: height 0.35s ease;
+  transition: height 0.35s ease;
+  transition: height 0.35s ease;
 }
 
 .modal-open {
@@ -128,19 +128,19 @@ input::-moz-focus-inner {
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-      -ms-transform: translate(0, -25%);
-          transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-     -moz-transition: -moz-transform 0.3s ease-out;
-       -o-transition: -o-transform 0.3s ease-out;
-          transition: transform 0.3s ease-out;
+      transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+      transform: translate(0, -25%);
+       transition: transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+       transition: transform 0.3s ease-out;
 }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+      transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
 }
 
 .modal-dialog {
@@ -158,8 +158,8 @@ input::-moz-focus-inner {
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: none;
 }
@@ -242,8 +242,8 @@ input::-moz-focus-inner {
   }
 
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -254,7 +254,7 @@ input::-moz-focus-inner {
   padding-left: 15px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 
 .navbar-collapse:before,
@@ -450,9 +450,9 @@ li {
 a {
   color: #5ba4e5;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
-     -moz-transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
-          transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+       transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+  -moz-transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+       transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
 }
 
 a:hover {
@@ -494,9 +494,9 @@ nav li a:before {
 }
 
 .ghost-logo {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   display: block;
   position: relative;
   z-index: 800;
@@ -508,9 +508,9 @@ nav li a:before {
   background: #242628;
   color: rgba(220, 240, 240, 0.7);
   text-align: center;
-  -webkit-transition: all 0.15s ease;
-     -moz-transition: all 0.15s ease;
-          transition: all 0.15s ease;
+       transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+       transition: all 0.15s ease;
   border-radius: 2px;
 }
 
@@ -522,7 +522,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e01d";
   position: absolute;
@@ -542,7 +542,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   content: "\e01e";
   font-size: 20px;
   color: white;
@@ -563,9 +563,9 @@ nav li a:before {
 .ghost-logo:hover {
   width: 81px;
   text-decoration: none;
-  -webkit-transition: width 0.25s ease 0.1s;
-     -moz-transition: width 0.25s ease 0.1s;
-          transition: width 0.25s ease 0.1s;
+       transition: width 0.25s ease 0.1s;
+  -moz-transition: width 0.25s ease 0.1s;
+       transition: width 0.25s ease 0.1s;
 }
 
 .ghost-logo:hover:after {
@@ -587,9 +587,9 @@ nav li a:before {
   position: absolute;
   top: 15px;
   left: 15px;
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+       transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
 @media (max-width: 800px), (max-width: 800px) {
@@ -607,9 +607,9 @@ nav li a:before {
     font-weight: 900;
     text-decoration: none;
     left: 7px;
-    -webkit-transition: all 0.25s ease, left 0.5s ease;
-       -moz-transition: all 0.25s ease, left 0.5s ease;
-            transition: all 0.25s ease, left 0.5s ease;
+         transition: all 0.25s ease, left 0.5s ease;
+    -moz-transition: all 0.25s ease, left 0.5s ease;
+         transition: all 0.25s ease, left 0.5s ease;
     border-radius: 0;
   }
 
@@ -637,11 +637,11 @@ nav li a:before {
   .global-header nav {
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px, rgba(255, 255, 255, 0.5) 0 -1px 0 inset;
-    -webkit-transition: all 0.15s ease-out 0;
-       -moz-transition: all 0.15s ease-out 0;
-            transition: all 0.15s ease-out 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(25%, #fff), color-stop(100%, rgba(255, 255, 255, 0.93)));
-    background: -webkit-linear-gradient(top, #fff 0%, #fff 25%, rgba(255, 255, 255, 0.93) 100%);
+         transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+         transition: all 0.15s ease-out 0;
+    background: gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(25%, #fff), color-stop(100%, rgba(255, 255, 255, 0.93)));
+    background: linear-gradient(top, #fff 0%, #fff 25%, rgba(255, 255, 255, 0.93) 100%);
     background: linear, to bottom, #fff 0%, #fff 25%, rgba(255, 255, 255, 0.93) 100%;
   }
 
@@ -702,9 +702,9 @@ nav li a:before {
   border-bottom: none;
   color: #242628;
   text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 @media (max-width: 800px), (max-width: 800px) {
@@ -721,9 +721,9 @@ nav li a:before {
 }
 
 .global-header .mobile-menu {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   display: block;
   height: 30px;
   width: 30px;
@@ -749,7 +749,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e01c";
   font-size: 14px;
@@ -839,7 +839,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e010";
 }
@@ -856,7 +856,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e00f";
 }
@@ -945,9 +945,9 @@ nav li a:before {
 }
 
 .modal-close {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   display: block;
   position: absolute;
   top: 25px;
@@ -963,7 +963,7 @@ nav li a:before {
   text-transform: none;
   speak: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e020";
   font-size: 18px;
@@ -984,12 +984,12 @@ nav li a:before {
 }
 
 .modal-content {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   border: 8px rgba(0, 0, 0, 0.2) solid;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
+  box-shadow: none;
 }
 
 .wrapper {
@@ -1001,9 +1001,9 @@ form {
 }
 
 form input {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   width: 260px;
   padding: 5px;
   margin: 0 0 5px 0;
@@ -1014,9 +1014,9 @@ form input {
   border: #d0e2ea 1px solid;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.05) 0 1px 3px inset;
-  -webkit-transition: all 0.15s ease-out 0;
-     -moz-transition: all 0.15s ease-out 0;
-          transition: all 0.15s ease-out 0;
+       transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+       transition: all 0.15s ease-out 0;
 }
 
 @media (max-width: 500px), (max-width: 500px) {
@@ -1030,9 +1030,9 @@ form input[type="email"]:focus {
   background: #fff;
   outline: none;
   outline-width: 0;
-  -webkit-transition: all 0.15s ease-out 0;
-     -moz-transition: all 0.15s ease-out 0;
-          transition: all 0.15s ease-out 0;
+       transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+       transition: all 0.15s ease-out 0;
 }
 
 .button,
@@ -1041,9 +1041,9 @@ button,
 button[type="submit"],
 .button-add,
 .button-add[type="submit"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   min-height: 35px;
   width: auto;
   display: inline-block;
@@ -1061,9 +1061,9 @@ button[type="submit"],
   text-shadow: none;
   border-radius: 0.3rem;
   border: rgba(0, 0, 0, 0.05) 0.1em solid;
-  -webkit-transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
-     -moz-transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
-          transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
+       transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
+  -moz-transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
+       transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
 }
 
 .button:not(.button-loading):hover,
@@ -1149,9 +1149,9 @@ main {
 }
 
 .page-wrapper {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+       box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   position: relative;
   max-width: 1100px;
   margin: 50px auto 50px auto;
