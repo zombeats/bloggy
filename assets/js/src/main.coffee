@@ -20,10 +20,4 @@ $ ->
 
   $('.post-content').fitVids()
 
-  if Itch.is 'device', 'desktop'
-    $('a').not('[href*="mailto:"]').click ->
-      if this.href.indexOf(location.hostname) is -1
-        window.open $(this).attr 'href'
-        false
-  else
-    FastClick.attach el
+  FastClick.attach el unless Itch.is 'device', 'desktop'
