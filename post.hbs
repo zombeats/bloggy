@@ -33,51 +33,7 @@
 
         <footer class="post-footer">
 
-          <section class="share">
-            <div class="fb-like" data-href="{{url absolute="true"}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{url absolute="true"}}" data-text="{{title}}" data-via="TryGhost" data-related="TryGhost">Tweet</a>
-
-            <div class="g-plusone" data-size="medium" data-href="{{url absolute="true"}}"></div>
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script');
-                po.type = 'text/javascript';
-                po.async = true;
-                po.src = 'https://apis.google.com/js/platform.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-
-            <a data-pocket-label="pocket" data-pocket-count="horizontal" data-pocket-align="left" class="pocket-btn" data-lang="en"></a>
-            <script type="text/javascript">
-              ! function(d, i) {
-                if (!d.getElementById(i)) {
-                  var j = d.createElement("script");
-                  j.id = i;
-                  j.src = "https://widgets.getpocket.com/v1/j/btn.js?v=1";
-                  var w = d.getElementById(i);
-                  d.body.appendChild(j);
-                }
-              }(document, "pocket-btn-js");
-            </script>
-
-            <a href="//www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&description={{title}}" data-pin-do="buttonPin" data-pin-config="beside">
-              <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" />
-            </a>
-            <script type="text/javascript">
-              (function(d) {
-                var f = d.getElementsByTagName('SCRIPT')[0],
-                  p = d.createElement('SCRIPT');
-                p.type = 'text/javascript';
-                p.async = true;
-                p.src = '//assets.pinterest.com/js/pinit.js';
-                p.setAttribute('data-pin-hover', true);
-                f.parentNode.insertBefore(p, f);
-              }(document));
-            </script>
-          </section>
+        {{!> share }}
 
           <section class="author">
             <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
