@@ -920,32 +920,6 @@ pre[class*="language-"] {
   }
 }
 
-a.ghost-logo.animated-logo {
-  background: url('/assets/images/logo.png');
-  left: 7px;
-  top: 7px;
-  width: 30px;
-  background-size: 30px, cover;
-  background-repeat: no-repeat;
-  display: none;
-
-  @include breakpoint(660px) {
-    display: inline;
-  }
-}
-
-.ghost-logo {
-  &:before {
-    content: '';
-  }
-
-  &:after {
-    content: $blog-name;
-    font-size: 1.6rem;
-    margin-left: 10px;
-  }
-}
-
 #global-footer .poweredby a {
   text-decoration: underline;
 }

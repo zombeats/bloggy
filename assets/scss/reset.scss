@@ -493,7 +493,7 @@ nav li a:before {
   margin-right: 1em;
 }
 
-.ghost-logo {
+.blog-logo {
        box-sizing: border-box;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -506,7 +506,7 @@ nav li a:before {
   height: 30px;
   width: 30px;
   background: #242628;
-  color: rgba(220, 240, 240, 0.7);
+  color: $blog-logo-color;
   text-align: center;
        transition: all 0.15s ease;
   -moz-transition: all 0.15s ease;
@@ -514,67 +514,25 @@ nav li a:before {
   border-radius: 2px;
 }
 
-.ghost-logo:before {
-  font-family: "Icons";
-  font-weight: normal;
-  font-style: normal;
+.blog-logo img {
   vertical-align: -7%;
   text-transform: none;
   speak: none;
   line-height: 1;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\e01d";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 4px;
+  left: 4px;
+  max-width: 22px;
 }
 
-.ghost-logo:hover {
-  text-decoration: none;
-}
-
-.ghost-logo:after {
-  font-family: "Icons";
-  font-weight: normal;
-  font-style: normal;
-  vertical-align: -7%;
-  text-transform: none;
-  speak: none;
-  line-height: 1;
-  font-smoothing: antialiased;
-  content: "\e01e";
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 5px;
-  left: 26px;
-  opacity: 0;
-}
-
-.ghost-logo:hover {
-  text-decoration: none;
-}
-
-.ghost-logo span {
-  display: none;
-}
-
-.ghost-logo:hover {
-  width: 81px;
-  text-decoration: none;
-       transition: width 0.25s ease 0.1s;
-  -moz-transition: width 0.25s ease 0.1s;
-       transition: width 0.25s ease 0.1s;
-}
-
-.ghost-logo:hover:after {
-  opacity: 1;
-}
 
 .global-header {
   position: relative;
   min-height: 80px;
+}
+
+.nav-current {
+  font-weight: bold;
 }
 
 @media (max-width: 800px), (max-width: 800px) {
@@ -583,7 +541,7 @@ nav li a:before {
   }
 }
 
-.global-header .ghost-logo {
+.global-header .blog-logo {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -593,14 +551,14 @@ nav li a:before {
 }
 
 @media (max-width: 800px), (max-width: 800px) {
-  .global-header .ghost-logo {
+  .global-header .blog-logo {
     top: 7px;
     left: 7px;
   }
 }
 
 @media (max-width: 660px), (max-width: 660px) {
-  .global-header .ghost-logo {
+  .global-header .blog-logo {
     width: 81px;
     background: transparent;
     color: rgba(60, 80, 90, 0.7);
@@ -613,7 +571,7 @@ nav li a:before {
     border-radius: 0;
   }
 
-  .global-header .ghost-logo:after {
+  .global-header .blog-logo:after {
     color: #242628;
     opacity: 1;
   }
