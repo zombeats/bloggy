@@ -23,7 +23,9 @@
    ========================================================================== */
 
 ::selection {
-  background: $selection-color;
+  color: $selection-color;
+  background: #b3d5f3;
+  text-shadow: none;
 }
 
 h1,
@@ -131,6 +133,10 @@ h6 a {
   color: $white;
   background: $header-color no-repeat center center;
   background-size: cover;
+
+  h1 {
+    background-color: $blog-description-color;
+  }
 
   @include breakpoint(400px) {
     width: 100%;
@@ -941,24 +947,17 @@ li.nav-contacto > a {
   }
 }
 
-/* Facebook Comments */
-
-.fb_iframe_widget,
-.fb_iframe_widget span,
-.fb_iframe_widget span iframe[style] {
-  min-width: 100% !important;
-  width: 100% !important;
-}
-
-/* Buttons */
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 
 .button-green,
 .button-add,
 .button-add[type="submit"] {
   transition: all 0.5s ease;
   background: white;
-  border: 2px solid $green;
-  color: $green;
+  border: 2px solid $feature-one-color;
+  color: $feature-one-color;
 }
 
 .button-green:not(.button-loading):hover,
@@ -969,19 +968,15 @@ li.nav-contacto > a {
 .button-add[type="submit"]:not(.button-loading):hover,
 .ghost-pro-ad:hover [type="submit"].button-add:not(.button-loading),
 .button-add[type="submit"]:not(.button-loading):focus {
-  background: $green;
+  background: $feature-one-color;
   color: white;
-}
-
-.modal-close {
-  color: $red;
 }
 
 .button-save,
 .button-blue,
 button[type="submit"],
 input[type="submit"] {
-  background: $blue;
+  background: $feature-two-color;
   box-shadow: none;
 }
 
@@ -993,9 +988,5 @@ button[type="submit"]:not(.button-loading):hover,
 button[type="submit"]:not(.button-loading):focus,
 input[type="submit"]:not(.button-loading):hover,
 input[type="submit"]:not(.button-loading):focus {
-  background: darken($blue, 10%);
-}
-
-.blog-header h1 {
-  background-color: rgba(#8BC34A, .7);
+  background: darken($feature-two-color, 10%);
 }

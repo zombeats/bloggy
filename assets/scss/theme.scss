@@ -1,4 +1,7 @@
 
+$blog-description-color   : rgba(#8BC34A, .7);
+$blog-logo-color          : rgba(220, 240, 240, 0.7);
+
 $subscribe-banner-color   : $green;
 $selection-color          : lighten($orange, 36%);
 $tag-color                : rgba($orange, .7);
@@ -8,9 +11,15 @@ $feature-two-color        : $blue;
 
 $link-hover-color         : $blue;
 
-$blog-logo-color         : rgba(220, 240, 240, 0.7);
-
 $header-color             : #303538;
 
-/* widgets */
-/** advertising **/
+/* ==========================================================================
+   Custom
+   ========================================================================== */
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+}
