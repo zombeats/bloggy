@@ -512,19 +512,25 @@ nav li a:before {
   -moz-transition: all 0.15s ease;
        transition: all 0.15s ease;
   border-radius: 2px;
-}
 
-.blog-logo img {
-  vertical-align: -7%;
-  text-transform: none;
-  speak: none;
-  line-height: 1;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  max-width: 22px;
-}
+  > img {
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    max-width: 22px;
+  }
 
+  > span {
+    color: rgba(60, 80, 90, 0.7);
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 900;
+  }
+}
 
 .global-header {
   position: relative;
@@ -561,14 +567,16 @@ nav li a:before {
   .global-header .blog-logo {
     width: 81px;
     background: transparent;
-    color: rgba(60, 80, 90, 0.7);
-    font-weight: 900;
     text-decoration: none;
     left: 7px;
          transition: all 0.25s ease, left 0.5s ease;
     -moz-transition: all 0.25s ease, left 0.5s ease;
          transition: all 0.25s ease, left 0.5s ease;
     border-radius: 0;
+  }
+
+  .blog-logo>span {
+    margin-left : 35px;
   }
 
   .global-header .blog-logo:after {
