@@ -30,7 +30,7 @@ dist =
 
 src =
   sass:
-    main   : 'assets/scss/itch.scss'
+    main   : 'assets/scss/bloggy.scss'
     files  : ['assets/scss/**/**']
   js       :
     main   : [ 'assets/js/src/__init.coffee'

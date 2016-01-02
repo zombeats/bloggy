@@ -1,17 +1,17 @@
 {
-  "name": "Itch",
+  "name": "bloggy",
   "description": "Ghost theme for brands",
-  "homepage": "https://github.com/kikobeats/Itch",
+  "homepage": "https://github.com/kikobeats/bloggy",
   "version": "0.0.0",
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kikobeats/Itch"
+    "url": "https://github.com/kikobeats/bloggy"
   },
   "bugs": {
-    "url": "https://github.com/Kikobeats/Itch/issues"
+    "url": "https://github.com/Kikobeats/bloggy/issues"
   },
   "keywords": [
     "ghost",

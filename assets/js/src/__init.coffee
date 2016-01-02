@@ -1,6 +1,6 @@
 'use strict'
 
-window.Itch = Itch =
+window.Bloggy = Bloggy =
   version: '0.0.0'
   is: (property, value) -> this.app.dataset[property] is value
   app: do -> document.body

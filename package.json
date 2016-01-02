@@ -1,7 +1,7 @@
 {
-  "name": "Itch",
+  "name": "bloggy",
   "description": "Ghost theme for brands",
-  "homepage": "https://github.com/Kikobeats/Itch",
+  "homepage": "https://github.com/Kikobeats/bloggy",
   "version": "0.0.0",
   "main": "./index.js",
   "author": {
@@ -9,9 +9,9 @@
     "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
-  "repository": "Kikobeats/Itch",
+  "repository": "Kikobeats/bloggy",
   "bugs": {
-    "url": "https://github.com/Kikobeats/Itch/issues"
+    "url": "https://github.com/Kikobeats/bloggy/issues"
   },
   "keywords": [],
   "dependencies": {},
