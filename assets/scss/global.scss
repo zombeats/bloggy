@@ -934,11 +934,11 @@ pre[class*="language-"] {
   min-height: 30px;
 }
 
-li.nav-unete > a {
+#feature-one {
   @include feature-header-button($feature-one-color);
 }
 
-li.nav-contacto > a {
+#feature-two {
   @include feature-header-button($feature-two-color);
   margin-left: 15px;
 

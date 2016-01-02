@@ -14,10 +14,10 @@ $(window).load ->
   $(window).smartresize casperFullImg
 
 $ ->
-  el = Itch.app
-  el.dataset.page = Itch.context()
-  el.dataset.device = Itch.device()
+  el = Bloggy.app
+  el.dataset.page = Bloggy.context()
+  el.dataset.device = Bloggy.device()
 
   $('.post-content').fitVids()
 
-  FastClick.attach el unless Itch.is 'device', 'desktop'
+  FastClick.attach el unless Bloggy.is 'device', 'desktop'
