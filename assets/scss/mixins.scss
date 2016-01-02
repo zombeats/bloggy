@@ -1,17 +1,22 @@
 @mixin feature-header-button($color) {
-  height: 30px;
-  padding: 6px 10px;
-  margin: 15px 0 0;
+  color: $color;
 
-  transition: all .5s ease;
+  @include breakpoint(min-width 800px) {
+    height: 30px;
+    padding: 6px 10px;
+    margin: 15px 0 0;
+    transition: all .5s ease;
+    border: 1.5px solid $color;
+    border-radius: 2px;
+    background: rgba(white, .8) !important;
 
-  color: $color !important;
-  border: 1.5px solid $color;
-  border-radius: 2px;
-  background: rgba(white, .8) !important;
+    &:hover {
+      color: rgba(white, .8) !important;
+      background: $color !important;
+    }
+  }
 
-  &:hover {
-    color: rgba(white, .8) !important;
-    background: $color !important;
+  @include breakpoint(max-width 800px) {
+    font-weight: 900;
   }
 }

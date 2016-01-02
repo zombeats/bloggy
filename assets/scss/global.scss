@@ -940,11 +940,6 @@ pre[class*="language-"] {
 
 #feature-two {
   @include feature-header-button($feature-two-color);
-  margin-left: 15px;
-
-  @include breakpoint(max-width 660px, max-width 660px) {
-    margin: 15px 0 !important;
-  }
 }
 
 /* ==========================================================================
