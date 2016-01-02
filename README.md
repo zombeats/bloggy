@@ -5,7 +5,7 @@
 ![Node version](https://img.shields.io/node/v/bloggy.svg?style=flat-square)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
-> A Corporative/Marketing blog for Ghost.
+> Branding theme for Ghost.
 
 ## Introduction
 

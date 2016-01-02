@@ -1,6 +1,6 @@
 {
   "name": "bloggy",
-  "description": "Ghost theme for brands",
+  "description": "Branding theme for Ghost",
   "homepage": "https://github.com/Kikobeats/bloggy",
   "version": "0.0.0",
   "main": "./index.js",
