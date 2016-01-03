@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.button-green,
+.button-add,
+.button-add[type="submit"] {
+  transition: all 0.5s ease;
+  background: white;
+  border: 2px solid $feature-one-color;
+  color: $feature-one-color;
+}
+
+.button-green:not(.button-loading):hover,
+.button-green:not(.button-loading):focus,
+.button-add:not(.button-loading):hover,
+.ghost-pro-ad:hover .button-add:not(.button-loading),
+.button-add:not(.button-loading):focus,
+.button-add[type="submit"]:not(.button-loading):hover,
+.ghost-pro-ad:hover [type="submit"].button-add:not(.button-loading),
+.button-add[type="submit"]:not(.button-loading):focus {
+  background: $feature-one-color;
+  color: white;
+}
+
+.button-save,
+.button-blue,
+button[type="submit"],
+input[type="submit"] {
+  background: $feature-two-color;
+  box-shadow: none;
+}
+
+.button-save:not(.button-loading):hover,
+.button-save:not(.button-loading):focus,
+.button-blue:not(.button-loading):hover,
+.button-blue:not(.button-loading):focus,
+button[type="submit"]:not(.button-loading):hover,
+button[type="submit"]:not(.button-loading):focus,
+input[type="submit"]:not(.button-loading):hover,
+input[type="submit"]:not(.button-loading):focus {
+  background: darken($feature-two-color, 10%);
+}

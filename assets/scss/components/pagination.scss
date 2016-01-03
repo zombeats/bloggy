@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Pagination - Tools to let you flick between pages
+   ========================================================================== */
+
+/* The main wrapper for our pagination links */
+
+.pagination {
+  position: relative;
+  margin: 40px auto 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #9eabb3;
+}
+
+.pagination a {
+  color: #9eabb3;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Push the previous/next links out to the left/right */
+
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: 5px 15px;
+  transition: border ease .3s;
+  text-decoration: none;
+  border: #ebf2f6 2px solid;
+  border-radius: 30px;
+
+  @include breakpoint(500px) {
+    position: static;
+    margin: 10px 0;
+  }
+}
+
+.older-posts {
+  right: 0;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 5px 0;
+
+  @include breakpoint(500px) {
+    display: block;
+  }
+}
+
+.newer-posts {
+  left: 0;
+}
+
+.older-posts:hover,
+.newer-posts:hover {
+  border-color: #9eabb3;
+}
+
+/* ==========================================================================
+   7. Read More - Next/Prev Post Links
+   ========================================================================== */
+
+.read-next {
+  display: flex;
+  margin: 4rem 0;
+  overflow: hidden;
+  border-radius: 5px;
+  align-items: stretch;
+}
+
+.read-next-story {
+  position: relative;
+  display: flex;
+  min-width: 50%;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  background: #222 no-repeat center center;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.read-next-story:hover {
+  text-decoration: none;
+}
+
+.read-next-story:hover:before {
+  transition: all .2s ease;
+  background: rgba(0, 0, 0, .8);
+}
+
+.read-next-story:hover .post:before {
+  transition: all .2s ease;
+  color: #222;
+  background: $white;
+}
+
+.read-next-story:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  transition: all .5s ease;
+  background: rgba(0, 0, 0, .7);
+}
+
+.read-next-story .post {
+  position: relative;
+  width: 80%;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.read-next-story .post:before {
+  padding: 4px 10px 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  content: "Siguiente Publicación";
+  transition: all .5s ease;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .8);
+  border: rgba(255, 255, 255, .5) 1px solid;
+  border-radius: 4px;
+}
+
+.read-next-story.prev .post:before {
+  content: "Tal vez te interese";
+}
+
+.read-next-story h2 {
+  margin-top: 3rem;
+  color: $white;
+}
+
+.read-next-story p {
+  margin: 3rem 0 0 0;
+  font-weight: 200;
+  line-height: 1.4em;
+  color: rgba(255, 255, 255, .8);
+}
+
+/* Special styles for posts with no cover images */
+
+.read-next-story.no-cover {
+  background: $white;
+}
+
+.read-next-story.no-cover:before {
+  display: none;
+}
+
+.read-next-story.no-cover .post:before {
+  color: rgba(0, 0, 0, .5);
+  border-color: rgba(0, 0, 0, .2);
+}
+
+.read-next-story.no-cover:hover .post:before {
+  color: $blue;
+  border-color: $blue;
+}
+
+.read-next-story.no-cover h2 {
+  color: rgba(0, 0, 0, .8);
+}
+
+.read-next-story.no-cover p {
+  color: rgba(0, 0, 0, .5);
+}
+
+/* if there are two posts without covers, put a border between them */
+
+.read-next-story.no-cover + .read-next-story.no-cover {
+  border-left: rgba(0, 0, 100, .04) 1px solid;
+}

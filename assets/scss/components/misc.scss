@@ -1,0 +1,33 @@
+/* ==========================================================================
+ Misc
+========================================================================== */
+
+.tags {
+  vertical-align: text-bottom;
+
+  > a {
+    padding: 0.167rem 0.5rem;
+    font-size: .55rem;
+    transition: all 350ms;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    border-radius: 0.7rem;
+    background-color: $tag-color;
+  }
+}
+
+#global-footer .poweredby a {
+  text-decoration: underline;
+}
+
+.global-header {
+  min-height: 30px;
+}
+
+#feature-one {
+  @include feature-header-button($feature-one-color);
+}
+
+#feature-two {
+  @include feature-header-button($feature-two-color);
+}

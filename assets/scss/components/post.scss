@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Single Post
+   ========================================================================== */
+
+.post-template {
+  .post {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.post-content {
+  margin-bottom: 3.2em;
+}
+
+.post-content img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 2.2em auto;
+
+  @include breakpoint(500px) {
+    margin: 1.6em auto;
+  }
+}
+
+.post-content .full-img {
+  width: calc(100% + 60px);
+  max-width: none;
+  margin-left: -60px;
+
+  @include breakpoint(400px) {
+    width: 100%;
+    width: calc(100% + 30px);
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  @include breakpoint(650px) {
+    width: 122%;
+    margin-right: -11%;
+    margin-left: -11%;
+  }
+
+  @include breakpoint(850px) {
+    width: 130%;
+    margin-right: -15%;
+    margin-left: -15%;
+  }
+
+  @include breakpoint(1100px) {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+.share {
+  margin: 1.6em 0;
+
+  @include breakpoint(750px) {
+    display: none;
+  }
+}
+
+.twitter-share-button {
+  margin-right: 30px;
+}
+
+.fb-like {
+  line-height: 1.2rem;
+}
+
+.post-template .fb-like {
+  margin-right: 30px;
+}
+
+.pocket-btn {
+  display: inline-block;
+  margin-right: -10px;
+  vertical-align: top;
+}
+
+[class^="PIN_"] {
+  @include transition(none);
+}
+
+.author {
+  position: relative;
+  padding: 30px;
+  margin: 1.6em 0;
+  border: $lightgrey 2px dashed;
+  background: lighten($lightgrey, 5%);
+
+  .author-img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    border: $white 5px solid;
+  }
+}
+
+.author-meta {
+  margin-left: 120px;
+
+  h4 {
+    margin-top: .25rem;
+  }
+
+  p {
+    margin: 1rem 0 0 0;
+    font-size: 1.4rem;
+  }
+}
+
+@include breakpoint(550px) {
+  .author {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .author .author-img {
+    position: static;
+  }
+
+  .author-meta {
+    margin-left: 0;
+  }
+
+  .author-meta p {
+    font-size: 1.3rem;
+  }
+}
+
+.footnotes {
+  font-size: 1.3rem;
+  font-style: italic;
+
+  li {
+    margin: .6rem 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.comments {
+  margin-top: 3.2em;
+}

@@ -6,7 +6,15 @@
 @import 'mixins';
 @import 'global';
 
-/* Customize */
+/* Components */
+@import 'components/post';
+@import 'components/prism';
+@import 'components/pagination';
+@import 'components/feature-post';
+@import 'components/misc';
+@import 'components/buttons';
+
+/* Widgets */
 @import 'widgets/blog-text';
 @import 'widgets/slack-box';
 @import 'widgets/ghost-love';
