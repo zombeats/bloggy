@@ -51,7 +51,7 @@ h1 {
 h2 {
   padding-top: 0;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   line-height: 1.2em;
   text-indent: -2px;
   letter-spacing: -1px;
@@ -100,6 +100,13 @@ h6 a {
     color: $link-hover-color;
     box-shadow: none;
   }
+}
+
+blockquote > p {
+  font-family: $quote-font;
+  font-style: italic;
+  letter-spacing: .01rem;
+  word-wrap: break-word;
 }
 
 .wrap {
@@ -167,7 +174,7 @@ h6 a {
     max-width: 640px;
     margin: 0 auto;
     font-size: 2.8rem;
-    font-weight: 200;
+    font-weight: $font-weight-thin;
     letter-spacing: 0;
     color: $white;
     display: inline-block;
@@ -223,7 +230,7 @@ h6 a {
   p {
     margin: 0 0 15px 0;
     font-size: 17px;
-    font-weight: 200;
+    font-weight: $font-weight-thin;
     line-height: 1.3em;
   }
 }

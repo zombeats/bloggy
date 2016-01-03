@@ -11,7 +11,7 @@ section {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: $sans-font;
       text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -35,7 +35,7 @@ h1 {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 mark {
@@ -49,7 +49,7 @@ img {
 
 button,
 input {
-  font-family: inherit;
+  font-family: $input-font;
   font-size: 100%;
   margin: 0;
 }
@@ -81,7 +81,7 @@ input::-moz-focus-inner {
        url("../fonts/icons.woff?1") format("woff"),
        url("../fonts/icons.ttf?1") format("truetype"),
        url("../fonts/icons.svg?1#icons") format("svg");
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-style: normal;
 }
 
@@ -317,7 +317,7 @@ input::-moz-focus-inner {
 }
 
 html {
-  font: 62.5%/1.65 "Open Sans", sans-serif;
+  font: 62.5%/1.65 $sans-font;
 }
 
 body {
@@ -331,7 +331,7 @@ h2,
 h3,
 h4 {
   color: #242628;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
@@ -339,7 +339,7 @@ h4 {
 
 h1 {
   font-size: 5.5rem;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   margin-bottom: 0.35rem;
 }
 
@@ -516,7 +516,7 @@ nav li a:before {
     color: rgba(60, 80, 90, 0.7);
     margin-left: 40px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -526,7 +526,7 @@ nav li a:before {
 }
 
 .nav-current {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 @media (max-width: 800px), (max-width: 800px) {
@@ -697,7 +697,7 @@ nav li a:before {
 
 .global-header .mobile-menu:before {
   font-family: "Icons";
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-style: normal;
   vertical-align: -7%;
   text-transform: none;
@@ -763,7 +763,7 @@ nav li a:before {
   float: left;
   padding: 12px 0;
   text-transform: none;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   color: #7d878a;
 }
 
@@ -776,7 +776,7 @@ nav li a:before {
 }
 
 #global-footer .poweredby a {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   color: #7d878a;
   text-decoration: none;
 }
@@ -787,7 +787,7 @@ nav li a:before {
 
 #global-footer .facebook a:before {
   font-family: "Icons";
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-style: normal;
   vertical-align: -7%;
   text-transform: none;
@@ -804,7 +804,7 @@ nav li a:before {
 
 #global-footer .twitter a:before {
   font-family: "Icons";
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-style: normal;
   vertical-align: -7%;
   text-transform: none;
@@ -911,7 +911,7 @@ nav li a:before {
 
 .modal-close:before {
   font-family: "Icons";
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-style: normal;
   vertical-align: -7%;
   text-transform: none;
@@ -1008,7 +1008,7 @@ button[type="submit"],
   color: #fff;
   font-size: 11px;
   line-height: 13px;
-  font-weight: 300;
+  font-weight: $font-weight-thin;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1055,7 +1055,7 @@ button.wide,
 .button,
 button {
   color: #777;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   background: #eee;
   box-shadow: none;
 }

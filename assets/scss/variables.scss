@@ -8,14 +8,15 @@ $default-transition-duration : 0.3s;
 @import "../vendor/compass-breakpoint/stylesheets/breakpoint";
 @include breakpoint-set('default feature', max-width);
 
-$sans-font                   : 'Raleway', sans-serif;
-$serif-font                  : 'Roboto Slab', serif;
+$sans-font                   : "Open Sans", sans-serif;
+$serif-font                  : serif;
 $code-font                   : Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 $quote-font                  : "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+$input-font                  : inherit;
 
-$font-weight-thin            : 100;
-$font-weight-normal          : 300;
-$font-weight-bold            : 700;
+$font-weight-thin            : 200;
+$font-weight-normal          : 400;
+$font-weight-bold            : 900;
 
 // Max widths
 $netbook                     : 1000px;
