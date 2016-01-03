@@ -1,25 +1,24 @@
 {{!< default}}
 
-<div class="wrap">
-    <section class="blog-content">
+<div class="wrap {{post_class}}">
+  <section class="blog-content">
 
-        <article class="{{post_class}}">
-            {{#post}}
+    <article>
+      {{#post}}
 
-            <a class="post-meta" href="{{@blog.url}}">&larr; Back to the front page</a>
+        {{> post-header}}
 
-            <h1 class="post-title">{{{title}}}</h1>
+        <a class="post-meta" href="{{@blog.url}}">&larr; Back to the front page</a>
 
-            <section class="post-content">
-                {{#if image}}<img src="{{image}}" alt="Post image" />{{/if}}
-                {{content}}
-            </section>
+        <h1 class="post-title">{{{title}}}</h1>
 
-            {{/post}}
-        </article>
+        {{> post-content}}
 
-    </section>
+      {{/post}}
+    </article>
 
-    {{> sidebar}}
+  </section>
+
+  {{> sidebar}}
 
 </div>

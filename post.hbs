@@ -6,18 +6,12 @@
     <article>
       {{#post}}
 
-        {{! If post is featured and has an image, make a big hero banner }}
-        {{#if image}}
-          {{#if featured}}
-            <div class="hero">
-              <div class="hero-image" style="background-image: url({{image}});"></div>
-            </div>
-          {{/if}}
-        {{/if}}
+        {{> post-header}}
 
         <a class="post-meta" href="{{@blog.url}}">&larr; Volver a la Portada</a>
 
         <h1 class="post-title">{{{title}}}</h1>
+
         <section class="post-meta">
           <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
           <span class="author-name">{{author}}</span>
@@ -26,14 +20,11 @@
           <span class="tags">{{tags prefix="• " separator=" "}}</span>
         </section>
 
-        <section class="post-content">
-          {{#if image}}{{#unless featured}}<img src="{{image}}" alt="Post image" />{{/unless}}{{/if}}
-          {{content}}
-        </section>
+        {{> post-content}}
 
         <footer class="post-footer">
 
-        {{!> share }}
+          {{!> share }}
 
           <section class="author">
             <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />

@@ -1,0 +1,9 @@
+{{! If post is featured and has an image, make a big hero banner }}
+
+{{#if image}}
+  {{#if featured}}
+    <div class="hero">
+      <div class="hero-image" style="background-image: url({{image}});"></div>
+    </div>
+  {{/if}}
+{{/if}}
