@@ -32,7 +32,14 @@ src =
   sass:
     main   : 'assets/scss/bloggy.scss'
     files  : ['assets/scss/**/**']
+
   js       :
+    i18n   :
+      main : 'assets/js/src/i18n/index.coffee'
+      languages :
+        path: 'assets/js/src/i18n'
+        supported: ['en_ES']
+
     main   : [ 'assets/js/src/__init.coffee'
                'assets/js/src/main.coffee' ]
     vendor : ['assets/js/src/application.js'
@@ -67,12 +74,26 @@ gulp.task 'css', ->
   .pipe gulp.dest dist.css
   return
 
-gulp.task 'js', ->
+gulp.task 'js i18n', ->
+  src.js.i18n.languages.supported.forEach (lang) ->
+    gulp.src src.js.main
+    .pipe addsrc "#{src.js.i18n.languages.path}/index.coffee"
+    .pipe addsrc "#{src.js.i18n.languages.path}/#{lang}.coffee"
+    .pipe changed dist.js
+    .pipe coffee()
+    .pipe addsrc src.js.vendor
+    .pipe concat dist.name + ".#{lang}.js"
+    .pipe uglify mangle: false
+    .pipe header banner, pkg: pkg
+    .pipe gulp.dest dist.js
+    return
+
+gulp.task 'js default', ->
   gulp.src src.js.main
   .pipe changed dist.js
   .pipe coffee()
   .pipe addsrc src.js.vendor
-  .pipe concat dist.name + '.js'
+  .pipe concat dist.name + ".js"
   .pipe uglify mangle: false
   .pipe header banner, pkg: pkg
   .pipe gulp.dest dist.js
@@ -87,6 +108,7 @@ gulp.task 'server', ->
   return
 
 gulp.task 'build', ['css', 'js']
+gulp.task 'js', ['js default', 'js i18n']
 
 gulp.task "default", ->
   gulp.start ["build", "server"]
