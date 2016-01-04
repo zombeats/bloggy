@@ -8,7 +8,7 @@
 
         {{> post-header}}
 
-        <a class="post-meta" href="{{@blog.url}}">&larr; Volver a la Portada</a>
+        <a class="post-meta" href="{{@blog.url}}">&larr; Back to the front page</a>
 
         <h1 class="post-title">{{{title}}}</h1>
 
@@ -16,7 +16,7 @@
           <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
           <span class="author-name">{{author}}</span>
           on the
-          <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do el MMMM YYYY"}}</time>
+          <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
           <span class="tags">{{tags prefix="• " separator=" "}}</span>
         </section>
 
@@ -45,7 +45,7 @@
             {{/next_post}}
           </section>
 
-          <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscríbete y recíbelo en tu correo</a>
+          <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe to Weekly Posts</a>
 
         </footer>
 
