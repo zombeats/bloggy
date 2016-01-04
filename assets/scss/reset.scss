@@ -530,6 +530,7 @@ nav li a:before {
 }
 
 .global-header .blog-logo {
+  text-decoration: none;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -549,7 +550,6 @@ nav li a:before {
   .global-header .blog-logo {
     width: 81px;
     background: transparent;
-    text-decoration: none;
     left: 7px;
          transition: all 0.25s ease, left 0.5s ease;
     -moz-transition: all 0.25s ease, left 0.5s ease;
@@ -558,7 +558,9 @@ nav li a:before {
   }
 
   .blog-logo>span {
-    margin-left : 35px;
+    color: rgba(60,80,90,.7);
+    margin-left: 40px;
+    font-size: 16px;
   }
 
   .global-header .blog-logo:after {
