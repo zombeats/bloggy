@@ -331,16 +331,10 @@ h2,
 h3,
 h4 {
   color: #242628;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-bold;
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
-}
-
-h1 {
-  font-size: 5.5rem;
-  font-weight: $font-weight-bold;
-  margin-bottom: 0.35rem;
 }
 
 @media (max-width: 800px), (max-width: 800px) {
