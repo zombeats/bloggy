@@ -10,7 +10,7 @@ uglify      = require 'gulp-uglify'
 cssmin      = require 'gulp-cssmin'
 addsrc      = require 'gulp-add-src'
 changed     = require 'gulp-changed'
-shortand    = require 'gulp-shortand'
+shorthand    = require 'gulp-shorthand'
 pkg         = require './package.json'
 _s          = require 'underscore.string'
 prefix      = require 'gulp-autoprefixer'
@@ -69,7 +69,7 @@ gulp.task 'css', ->
   .pipe concat dist.name + '.css'
   .pipe prefix()
   .pipe strip all: true
-  .pipe shortand()
+  .pipe shorthand()
   .pipe cssmin()
   .pipe header banner, pkg: pkg
   .pipe gulp.dest dist.css
@@ -84,7 +84,7 @@ gulp.task 'js i18n', ->
     .pipe coffee()
     .pipe addsrc src.js.vendor
     .pipe concat dist.name + ".#{lang}.js"
-    .pipe uglify mangle: false
+    .pipe uglify()
     .pipe header banner, pkg: pkg
     .pipe gulp.dest dist.js
     return
@@ -95,7 +95,7 @@ gulp.task 'js default', ->
   .pipe coffee()
   .pipe addsrc src.js.vendor
   .pipe concat dist.name + ".js"
-  .pipe uglify mangle: false
+  .pipe uglify()
   .pipe header banner, pkg: pkg
   .pipe gulp.dest dist.js
   return
