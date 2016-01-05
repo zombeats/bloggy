@@ -11,7 +11,8 @@ $(window).load ->
       method = if imageWidth >= contentWidth then 'addClass' else 'removeClass'
       $(this)[method] 'full-img'
 
-  $(window).smartresize casperFullImg
+    $(this).smartresize casperFullImg
+    $('#newsletter_form').attr('action', window.newsletter_form) if (window.newsletter_form)
 
 $ ->
   el = Bloggy.app

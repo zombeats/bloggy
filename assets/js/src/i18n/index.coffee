@@ -16,17 +16,14 @@ $ ->
     '.prefix-date'
   ]
 
-  for selector in selectors when i18n[selector]
-    $(selector).html(i18n[selector])
+  $(selector).html(i18n[selector]) for selector in selectors when i18n[selector]
 
   # inline css
-
-  css_selector = '.read-next-story .post:before'
-  property = "<style>.read-next-story .post:before{ content: '#{i18n[css_selector]}' }</style>"
+  selector = '.read-next-story .post:before'
+  property = "<style>.read-next-story .post:before{ content: '#{i18n[selector]}' }</style>"
   $('head').append(property)
 
   # pagination
-
   selector = '.page-number'
   pageNumber = $(selector).html().split(' ')
   pageNumberi18n = i18n[selector].split(' ')
@@ -34,6 +31,5 @@ $ ->
   $(selector).html(pageNumber.join(' '))
 
   # forms
-
-  selector = 'fieldEmail'
-  window[selector].placeholder = i18n[selector]
+  window.fieldEmail.placeholder = i18n.fieldEmail
+  window.newsletter_subscribe.value = i18n.newsletter_subscribe

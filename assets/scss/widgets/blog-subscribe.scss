@@ -1,3 +1,5 @@
+/*  Widget */
+
 .blog-subscribe {
   padding: 0;
 
@@ -17,9 +19,10 @@
 
     color: $brown;
   }
-}//.blog-subscribe
+}
 
-//the modal
+/* Main Modal */
+
 #blogsubscribe {
   .modal-header {
     padding: 50px 50px 0 50px;
@@ -58,20 +61,21 @@
     height: 50px;
     padding: 0 15px;
     margin-bottom: 1rem;
-  }
-  button {
-    min-height: 50px;
 
-    font-size: 1.8rem;
-    line-height: 1;
+    &:last-of-type {
+        min-height: 50px;
+        font-size: 1.8rem;
+        line-height: 1;
 
-    @include breakpoint(450px) {
-      font-size: 1.3rem;
-    }
+        @include breakpoint(450px) {
+          font-size: 1.3rem;
+        }
+      }
+
   }
   p {
     margin: 1rem 0;
 
     color: $brown;
   }
-}//#blogsubscribe
+}
