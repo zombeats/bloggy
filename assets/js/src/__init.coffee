@@ -17,7 +17,3 @@ window.Bloggy = Bloggy =
     return 'mobile' if (w <= 480)
     return 'tablet' if (w <= 1024)
     'desktop'
-
-$ ->
-  $(feature_one_selector).attr('id', 'feature-one')
-  $(feature_two_selector).attr('id', 'feature-two')
