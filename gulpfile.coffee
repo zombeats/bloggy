@@ -81,7 +81,7 @@ gulp.task 'js i18n', ->
     .pipe addsrc "#{src.js.i18n.languages.path}/index.coffee"
     .pipe addsrc "#{src.js.i18n.languages.path}/#{lang}.coffee"
     .pipe changed dist.js
-    .pipe coffee()
+    .pipe coffee().on 'error', gutil.log
     .pipe addsrc src.js.vendor
     .pipe concat dist.name + ".#{lang}.js"
     .pipe uglify()
@@ -92,7 +92,7 @@ gulp.task 'js i18n', ->
 gulp.task 'js default', ->
   gulp.src src.js.main
   .pipe changed dist.js
-  .pipe coffee()
+  .pipe coffee().on 'error', gutil.log
   .pipe addsrc src.js.vendor
   .pipe concat dist.name + ".js"
   .pipe uglify()
