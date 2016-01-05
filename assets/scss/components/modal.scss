@@ -1,0 +1,56 @@
+#blogsubscribe {
+  .modal-header {
+    padding: 50px 50px 0 50px;
+
+    text-align: center;
+
+    border: none;
+
+    @include breakpoint(450px) {
+      padding: 35px 20px 0 20px;
+    }
+  }
+  .modal-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.1em;
+
+    @include breakpoint(450px) {
+      font-size: 2.2rem;
+    }
+  }
+  .modal-body {
+    padding: 30px 50px 50px;
+
+    text-align: center;
+
+    @include breakpoint(450px) {
+      padding: 10px 20px 30px;
+    }
+  }
+  form {
+    margin: 0;
+  }
+  input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+        min-height: 50px;
+        font-size: 1.8rem;
+        line-height: 1;
+
+        @include breakpoint(450px) {
+          font-size: 1.3rem;
+        }
+      }
+
+  }
+  p {
+    margin: 1rem 0;
+
+    color: $brown;
+  }
+}
