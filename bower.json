@@ -1,6 +1,6 @@
 {
   "name": "bloggy",
-  "description": "Ghost theme for brands",
+  "description": "Branding theme for Ghost",
   "homepage": "https://github.com/kikobeats/bloggy",
   "version": "0.0.0",
   "authors": [
@@ -22,8 +22,8 @@
     "minimalism"
   ],
   "dependencies": {
-    "fitvids": "*",
-    "fastclick": "~1.0.6"
+    "fitvids": "latest",
+    "fastclick": "latest"
   },
   "ignore": [
     "**/.*",

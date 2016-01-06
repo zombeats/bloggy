@@ -36,8 +36,7 @@
     "underscore.string": "latest"
   },
   "engines": {
-    "node": "~0.10.0 || ~0.12.0 || ~4.2.0",
-    "iojs": "~1.2.0",
+    "node": "~4.2.0",
     "npm": ">= 1.4.0"
   },
   "scripts": {
