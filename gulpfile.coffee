@@ -113,8 +113,10 @@ gulp.task 'server', ->
 gulp.task 'build', ['css', 'js']
 gulp.task 'js', ['js default', 'js i18n']
 
+gulp.task 'watch', -> gulp.watch 'assets/js/src/i18n/**/*', ['js']
+
 gulp.task "default", ->
-  gulp.start ["build", "server"]
+  gulp.start ["build", "watch", "server"]
   gulp.watch src.sass.files, ["css"]
   gulp.watch src.js.main, ["js"]
   gulp.watch src.js.vendor, ["js"]
