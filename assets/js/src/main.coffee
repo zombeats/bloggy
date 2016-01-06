@@ -12,13 +12,7 @@ $(window).load ->
       $(this)[method] 'full-img'
 
     $(this).smartresize casperFullImg
-    $('#newsletter_form').attr('action', window.newsletter_form) if (window.newsletter_form)
 
 $ ->
-  el = Bloggy.app
-  el.dataset.page = Bloggy.context()
-  el.dataset.device = Bloggy.device()
-
   $('.post-content').fitVids()
-
-  FastClick.attach el unless Bloggy.is 'device', 'desktop'
+  FastClick.attach Bloggy.app unless Bloggy.is 'device', 'desktop'

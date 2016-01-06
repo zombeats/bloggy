@@ -2,7 +2,7 @@
 
 window.Bloggy = Bloggy =
   version: '0.1.0'
-  is: (property, value) -> this.app.dataset[property] is value
+  is: (k, v=!'undefined') -> this.app.dataset[k] is v
   app: do -> document.body
 
   context: ->
@@ -17,3 +17,8 @@ window.Bloggy = Bloggy =
     return 'mobile' if (w <= 480)
     return 'tablet' if (w <= 1024)
     'desktop'
+
+Bloggy.app.dataset.page = Bloggy.context()
+Bloggy.app.device = Bloggy.device()
+
+$('#newsletter_form').attr('action', window.newsletter_form) if (window.newsletter_form)
