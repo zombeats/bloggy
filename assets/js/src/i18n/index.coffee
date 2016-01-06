@@ -1,4 +1,5 @@
 $ ->
+
   selectors = [
     # newsletter modal
     '.subscribe-banner'
@@ -16,20 +17,23 @@ $ ->
     '.prefix-date'
   ]
 
-  $(selector).html(i18n[selector]) for selector in selectors when i18n[selector]
-
-  # inline css
-  selector = '.read-next-story .post:before'
-  property = "<style>.read-next-story .post:before{ content: '#{i18n[selector]}' }</style>"
-  $('head').append(property)
-
-  # pagination
-  selector = '.page-number'
-  pageNumber = $(selector).html().split(' ')
-  pageNumberi18n = i18n[selector].split(' ')
-  pageNumber[n] = pageNumberi18n[n] for n in [0, 2]
-  $(selector).html(pageNumber.join(' '))
+  $(selector).html(i18n[selector]) for selector in selectors
 
   # forms
   window.fieldEmail.placeholder = i18n.fieldEmail
   window.newsletter_subscribe.value = i18n.newsletter_subscribe
+
+  if Bloggy.is 'page', 'post'
+    # read-next inline css
+    selector = '.read-next-story .post:before'
+    property = "<style>.read-next-story .post:before{ content: '#{i18n[selector]}' }</style>"
+    $('head').append(property)
+  else
+    # pagination
+    selector = '.page-number'
+    pageNumber = $(selector).html().split(' ')
+    pageNumberi18n = window.i18n[selector].split(' ')
+    pageNumber[n] = pageNumberi18n[n] for n in [0, 2]
+    $(selector).html pageNumber.join(' ')
+
+
