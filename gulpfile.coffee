@@ -18,9 +18,12 @@ strip       = require 'gulp-strip-css-comments'
 browserSync = require 'browser-sync'
 reload      = browserSync.reload
 
-PORT =
-  GHOST: 2368
-  BROWSERSYNC: 3000
+CONST =
+  DEFAULT_LANG : 'en_US'
+  SUPPORTED_LANGS : [ 'en_ES' ]
+  PORT:
+    GHOST: 2368
+    BROWSERSYNC: 3000
 
 # -- Files ---------------------------------------------------------------------
 
@@ -39,7 +42,6 @@ src =
       main : 'assets/js/src/i18n/index.coffee'
       languages :
         path: 'assets/js/src/i18n'
-        supported: ['en_ES']
 
     main   : [ 'assets/js/src/__init.coffee'
                'assets/js/src/main.coffee' ]
@@ -76,7 +78,7 @@ gulp.task 'css', ->
   return
 
 gulp.task 'js i18n', ->
-  src.js.i18n.languages.supported.forEach (lang) ->
+  CONST.SUPPORTED_LANGS.forEach (lang) ->
     gulp.src src.js.main
     .pipe addsrc "#{src.js.i18n.languages.path}/index.coffee"
     .pipe addsrc "#{src.js.i18n.languages.path}/#{lang}.coffee"
@@ -94,7 +96,7 @@ gulp.task 'js default', ->
   .pipe changed dist.js
   .pipe coffee().on 'error', gutil.log
   .pipe addsrc src.js.vendor
-  .pipe concat dist.name + ".js"
+  .pipe concat dist.name + ".#{CONST.DEFAULT_LANG}.js"
   .pipe uglify()
   .pipe header banner, pkg: pkg
   .pipe gulp.dest dist.js
@@ -102,10 +104,10 @@ gulp.task 'js default', ->
 
 gulp.task 'server', ->
   browserSync.init null,
-    proxy: "http://127.0.0.1:#{PORT.GHOST}"
+    proxy: "http://127.0.0.1:#{CONST.PORT.GHOST}"
     files: ["assets/**/*.*"]
     reloadDelay: 300
-    port: PORT.BROWSERSYNC
+    port: CONST.PORT.BROWSERSYNC
   return
 
 gulp.task 'build', ['css', 'js']
