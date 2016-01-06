@@ -19,7 +19,7 @@
 
 ## Features
 
-- i18n support. Currently `en`/`es` supported.
+- i18n support. Currently `en_US`/`en_ES` supported.
 - Google Analytics integration.
 - Newsletter integration powered by Mailchimp.
 - Featured and Static post views.
@@ -42,7 +42,9 @@ $ git clone git@github.com:Kikobeats/bloggy.git
 
 ### DOM Selector
 
-It's necessary that you stablish the DOM library and the version to use with the theme. For do it, go to `Admin Panel` → `Code Injection` → `Blog Footer` and should be similar to:
+It's necessary that you stablish the DOM library and the version to use with the theme.
+
+For do it, go to `Admin Panel` → `Code Injection` → `Blog Footer` and should be similar to:
 
 ```html
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
