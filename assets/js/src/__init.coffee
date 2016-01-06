@@ -19,6 +19,6 @@ window.Bloggy = Bloggy =
     'desktop'
 
 Bloggy.app.dataset.page = Bloggy.context()
-Bloggy.app.device = Bloggy.device()
+Bloggy.app.dataset.device = Bloggy.device()
 
 $('#newsletter_form').attr('action', window.newsletter_form) if (window.newsletter_form)
