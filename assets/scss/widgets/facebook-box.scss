@@ -1,11 +1,5 @@
 .facebook-box {
-  min-height: 280px;
   padding: 3px 0 0;
-
-  text-align: center;
-
-  border: #eee 1px solid;
-  border-top: $blue 3px solid;
 
   @include breakpoint(1000px) {
     display: none;
