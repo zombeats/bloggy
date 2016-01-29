@@ -1,3 +1,28 @@
+<a name="0.2.0"></a>
+# 0.2.0 (2016-01-29)
+
+
+* Adjust prism ([7e810cc](https://github.com/kikobeats/bloggy/commit/7e810cc))
+* Adjust widgets ([aeadb9a](https://github.com/kikobeats/bloggy/commit/aeadb9a))
+* Adjust widgets ([f3e1722](https://github.com/kikobeats/bloggy/commit/f3e1722))
+* Avoid unused components ([636df23](https://github.com/kikobeats/bloggy/commit/636df23))
+* Blog title inline ([bebd8d3](https://github.com/kikobeats/bloggy/commit/bebd8d3))
+* Fix device typo ([777288f](https://github.com/kikobeats/bloggy/commit/777288f))
+* Fix translation in different pages context ([2a12118](https://github.com/kikobeats/bloggy/commit/2a12118))
+* gplus out ([133ace7](https://github.com/kikobeats/bloggy/commit/133ace7))
+* Hide title in header ([9c77db5](https://github.com/kikobeats/bloggy/commit/9c77db5))
+* Improve Bloggy instance ([39fc0fb](https://github.com/kikobeats/bloggy/commit/39fc0fb))
+* Merge pull request #5 from musantro/master ([2ad5854](https://github.com/kikobeats/bloggy/commit/2ad5854))
+* ordered sidebars ([4a516f6](https://github.com/kikobeats/bloggy/commit/4a516f6))
+* select sidebars ([8709894](https://github.com/kikobeats/bloggy/commit/8709894))
+* Update bumped config ([5a8323f](https://github.com/kikobeats/bloggy/commit/5a8323f))
+* Update favicon ([0e6ba16](https://github.com/kikobeats/bloggy/commit/0e6ba16))
+* Update scripts ([3a67b27](https://github.com/kikobeats/bloggy/commit/3a67b27))
+* Update top posts ([b9c31ea](https://github.com/kikobeats/bloggy/commit/b9c31ea))
+* watch i18n files ([f0750a6](https://github.com/kikobeats/bloggy/commit/f0750a6))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2016-01-06)
 
@@ -56,9 +81,10 @@
 * Move share snippets in separate files ([4166995](https://github.com/kikobeats/bloggy/commit/4166995))
 * new build ([9a491fa](https://github.com/kikobeats/bloggy/commit/9a491fa))
 * Refactor JS ([4b0c599](https://github.com/kikobeats/bloggy/commit/4b0c599))
+* Release 0.1.0 ([1683bdf](https://github.com/kikobeats/bloggy/commit/1683bdf))
 * Remove click event ([f0c1934](https://github.com/kikobeats/bloggy/commit/f0c1934))
-* Remove custom code ([2c9a51b](https://github.com/kikobeats/bloggy/commit/2c9a51b))
 * Remove custom code ([953d036](https://github.com/kikobeats/bloggy/commit/953d036))
+* Remove custom code ([2c9a51b](https://github.com/kikobeats/bloggy/commit/2c9a51b))
 * Remove DOM condition ([9158cf7](https://github.com/kikobeats/bloggy/commit/9158cf7))
 * Remove logo background ([ed044ca](https://github.com/kikobeats/bloggy/commit/ed044ca))
 * Remove min width ([976cb9d](https://github.com/kikobeats/bloggy/commit/976cb9d))
