@@ -1,9 +1,18 @@
+<a name="0.2.2"></a>
+## 0.2.2 (2016-01-30)
+
+
+* Enable prism ([c0b4a35](https://github.com/kikobeats/bloggy/commit/c0b4a35))
+
+
+
 <a name="0.2.1"></a>
 ## 0.2.1 (2016-01-30)
 
 
 * disabel facebook sdk injection. ([bb1ba5b](https://github.com/kikobeats/bloggy/commit/bb1ba5b))
 * fix event url ([aa6416a](https://github.com/kikobeats/bloggy/commit/aa6416a))
+* Release 0.2.1 ([ce40f25](https://github.com/kikobeats/bloggy/commit/ce40f25))
 * Remove duplicate code ([a9b06bb](https://github.com/kikobeats/bloggy/commit/a9b06bb))
 
 

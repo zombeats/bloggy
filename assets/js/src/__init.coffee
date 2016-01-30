@@ -1,7 +1,7 @@
 'use strict'
 
 window.Bloggy = Bloggy =
-  version: '0.1.0'
+  version: '0.2.2'
   is: (k, v=!'undefined') -> this.app.dataset[k] is v
   app: do -> document.body
 
