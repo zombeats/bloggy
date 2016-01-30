@@ -1,10 +1,20 @@
+<a name="0.2.1"></a>
+## 0.2.1 (2016-01-30)
+
+
+* disabel facebook sdk injection. ([bb1ba5b](https://github.com/kikobeats/bloggy/commit/bb1ba5b))
+* fix event url ([aa6416a](https://github.com/kikobeats/bloggy/commit/aa6416a))
+* Remove duplicate code ([a9b06bb](https://github.com/kikobeats/bloggy/commit/a9b06bb))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2016-01-29)
 
 
 * Adjust prism ([7e810cc](https://github.com/kikobeats/bloggy/commit/7e810cc))
-* Adjust widgets ([aeadb9a](https://github.com/kikobeats/bloggy/commit/aeadb9a))
 * Adjust widgets ([f3e1722](https://github.com/kikobeats/bloggy/commit/f3e1722))
+* Adjust widgets ([aeadb9a](https://github.com/kikobeats/bloggy/commit/aeadb9a))
 * Avoid unused components ([636df23](https://github.com/kikobeats/bloggy/commit/636df23))
 * Blog title inline ([bebd8d3](https://github.com/kikobeats/bloggy/commit/bebd8d3))
 * Fix device typo ([777288f](https://github.com/kikobeats/bloggy/commit/777288f))
@@ -14,6 +24,7 @@
 * Improve Bloggy instance ([39fc0fb](https://github.com/kikobeats/bloggy/commit/39fc0fb))
 * Merge pull request #5 from musantro/master ([2ad5854](https://github.com/kikobeats/bloggy/commit/2ad5854))
 * ordered sidebars ([4a516f6](https://github.com/kikobeats/bloggy/commit/4a516f6))
+* Release 0.2.0 ([461c61d](https://github.com/kikobeats/bloggy/commit/461c61d))
 * select sidebars ([8709894](https://github.com/kikobeats/bloggy/commit/8709894))
 * Update bumped config ([5a8323f](https://github.com/kikobeats/bloggy/commit/5a8323f))
 * Update favicon ([0e6ba16](https://github.com/kikobeats/bloggy/commit/0e6ba16))
