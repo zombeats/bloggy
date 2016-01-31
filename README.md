@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="http://i.imgur.com/bQ9E4z9.png" alt="bloggy">
+  <img src="http://i.imgur.com/vxzThpT.png" alt="bloggy">
   <br>
 </p>
 
@@ -11,7 +11,7 @@
 ![Node version](https://img.shields.io/node/v/bloggy.svg?style=flat-square)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
-> Branding theme for Ghost.
+> Brand theme for Ghost.
 
 ## Introduction
 
@@ -29,8 +29,6 @@
 ## First Steps
 
 ### Installation
-
-Please ensure that `git` and `curl` is installed on your machine.
 
 Enter the theme folder (`content/themes`) of your Ghost installation and paste the following command:
 
@@ -72,6 +70,12 @@ For example, if you want to use the `en_EN` version, just add:
 <script type="text/javascript" src="/assets/js/bloggy.en_EN.js"></script>
 ```
 
+## Development
+
+1. Install theme dev dependencies: `npm install`.
+2. setup dev environment: `gulp`.
+3. Make a PR per each improvement :-).
+
 ## Related
 
 * [Uno Zen](https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost) – Minimalist and Elegant theme for Ghost.
@@ -79,3 +83,4 @@ For example, if you want to use the `en_EN` version, just add:
 ## License
 
 MIT © [Kiko Beats](kikobeats.com)
+ 
