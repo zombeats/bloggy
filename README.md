@@ -33,7 +33,7 @@
 Enter the theme folder (`content/themes`) of your Ghost installation and paste the following command:
 
 ```bash
-$ git clone git@github.com:Kikobeats/bloggy.git
+$ git clone https://github.com/Kikobeats/bloggy.git
 ```
 
 ### Setup
