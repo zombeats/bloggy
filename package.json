@@ -2,7 +2,7 @@
   "name": "bloggy",
   "description": "Branding theme for Ghost",
   "homepage": "https://github.com/Kikobeats/bloggy",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "main": "./index.js",
   "author": {
     "name": "Kiko Beats",

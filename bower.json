@@ -2,40 +2,40 @@
   "name": "bloggy",
   "description": "Branding theme for Ghost",
   "homepage": "https://github.com/kikobeats/bloggy",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kikobeats/bloggy"
+    "url": "git+https://github.com/kikobeats/bloggy.git"
   },
   "bugs": {
     "url": "https://github.com/Kikobeats/bloggy/issues"
   },
   "keywords": [
+    "elegant",
     "ghost",
+    "minimalism",
     "theme",
     "uno",
-    "zen",
-    "elegant",
-    "minimalism"
+    "zen"
   ],
   "dependencies": {
-    "fitvids": "latest",
-    "fastclick": "latest"
+    "fastclick": "latest",
+    "fitvids": "latest"
+  },
+  "devDependencies": {
+    "compass-breakpoint": "breakpoint-sass#~2.6.1"
   },
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
     "assets/vendor ",
+    "bower_components",
+    "node_modules",
     "test",
     "tests"
   ],
   "private": true,
-  "license": "MIT",
-  "devDependencies": {
-    "compass-breakpoint": "breakpoint-sass#~2.6.1"
-  }
+  "license": "MIT"
 }

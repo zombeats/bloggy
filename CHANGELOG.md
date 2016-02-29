@@ -1,8 +1,22 @@
+<a name="1.0.0"></a>
+# 1.0.0 (2016-02-29)
+
+
+* Add sublime files ([3ca5d86](https://github.com/kikobeats/bloggy/commit/3ca5d86))
+* git clone https ([ccadf46](https://github.com/kikobeats/bloggy/commit/ccadf46))
+* Little adjusts ([6a39ffb](https://github.com/kikobeats/bloggy/commit/6a39ffb))
+* Merge pull request #6 from foorb/patch-1 ([f0abd02](https://github.com/kikobeats/bloggy/commit/f0abd02))
+* Optimize images ([32a38bf](https://github.com/kikobeats/bloggy/commit/32a38bf))
+* Support HTML in author section ([6dfea18](https://github.com/kikobeats/bloggy/commit/6dfea18))
+
+
+
 <a name="0.2.2"></a>
 ## 0.2.2 (2016-01-30)
 
 
 * Enable prism ([c0b4a35](https://github.com/kikobeats/bloggy/commit/c0b4a35))
+* Release 0.2.2 ([668d791](https://github.com/kikobeats/bloggy/commit/668d791))
 
 
 
