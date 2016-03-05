@@ -1,3 +1,14 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2016-03-05)
+
+
+* Add style for image caption ([6dc88e9](https://github.com/kikobeats/bloggy/commit/6dc88e9))
+* Fix indent ([45a7e60](https://github.com/kikobeats/bloggy/commit/45a7e60))
+* Fix typo ([4f5ee3d](https://github.com/kikobeats/bloggy/commit/4f5ee3d))
+* Little refactor ([973cb86](https://github.com/kikobeats/bloggy/commit/973cb86))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2016-02-29)
 
@@ -7,6 +18,7 @@
 * Little adjusts ([6a39ffb](https://github.com/kikobeats/bloggy/commit/6a39ffb))
 * Merge pull request #6 from foorb/patch-1 ([f0abd02](https://github.com/kikobeats/bloggy/commit/f0abd02))
 * Optimize images ([32a38bf](https://github.com/kikobeats/bloggy/commit/32a38bf))
+* Release 1.0.0 ([fcfcfdf](https://github.com/kikobeats/bloggy/commit/fcfcfdf))
 * Support HTML in author section ([6dfea18](https://github.com/kikobeats/bloggy/commit/6dfea18))
 
 
