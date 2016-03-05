@@ -17,7 +17,7 @@
 
      article {
        max-width: 700px;
-       margin: 0 auto 0;
+       margin: 0 auto;
        font-size: 1.15em;
      }
 
@@ -107,50 +107,54 @@
     margin-bottom: 0;
     border-bottom: none;
   }
+
+  .fb-like {
+    margin-right: 30px;
+  }
 }
 
 .post-content {
   margin-bottom: 3.2em;
-}
 
-.post-content img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  margin: 2.2em auto;
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 2.2em auto;
 
-  @include breakpoint(500px) {
-    margin: 1.6em auto;
-  }
-}
-
-.post-content .full-img {
-  width: calc(100% + 60px);
-  max-width: none;
-  margin-left: -60px;
-
-  @include breakpoint(400px) {
-    width: 100%;
-    width: calc(100% + 30px);
-    margin-right: -15px;
-    margin-left: -15px;
+    @include breakpoint(500px) {
+      margin: 1.6em auto;
+    }
   }
 
-  @include breakpoint(650px) {
-    width: 122%;
-    margin-right: -11%;
-    margin-left: -11%;
-  }
+  .full-img {
+    width: calc(100% + 60px);
+    max-width: none;
+    margin-left: -60px;
 
-  @include breakpoint(850px) {
-    width: 130%;
-    margin-right: -15%;
-    margin-left: -15%;
-  }
+    @include breakpoint(400px) {
+      width: 100%;
+      width: calc(100% + 30px);
+      margin-right: -15px;
+      margin-left: -15px;
+    }
 
-  @include breakpoint(1100px) {
-    width: calc(100% + 30px);
-    margin-left: -15px;
+    @include breakpoint(650px) {
+      width: 122%;
+      margin-right: -11%;
+      margin-left: -11%;
+    }
+
+    @include breakpoint(850px) {
+      width: 130%;
+      margin-right: -15%;
+      margin-left: -15%;
+    }
+
+    @include breakpoint(1100px) {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
   }
 }
 
@@ -168,10 +172,6 @@
 
 .fb-like {
   line-height: 1.2rem;
-}
-
-.post-template .fb-like {
-  margin-right: 30px;
 }
 
 .pocket-btn {
@@ -209,8 +209,8 @@
   }
 
   p {
-    margin: 1rem 0 0 0;
     font-size: 1.4rem;
+    margin: 1rem 0 0;
   }
 }
 
