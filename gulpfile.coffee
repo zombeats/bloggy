@@ -53,9 +53,6 @@ src =
   css      :
     main   : 'assets/css/' + dist.name + '.css'
     vendor : []
-  templates:
-    main   : ['**.hbs'
-              'partials/**/**.hbs']
 
 banner = [ "/**"
            " * <%= pkg.name %> - <%= pkg.description %>"
