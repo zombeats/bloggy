@@ -53,6 +53,9 @@ src =
   css      :
     main   : 'assets/css/' + dist.name + '.css'
     vendor : []
+  templates:
+    main   : ['**.hbs'
+              'partials/**/**.hbs']
 
 banner = [ "/**"
            " * <%= pkg.name %> - <%= pkg.description %>"
@@ -105,7 +108,9 @@ gulp.task 'js default', ->
 gulp.task 'server', ->
   browserSync.init null,
     proxy: "http://127.0.0.1:#{CONST.PORT.GHOST}"
-    files: ["assets/**/*.*"]
+    files: ["assets/**/*.*",
+            "*.hbs",
+            "partials/**/*.hbs"]
     reloadDelay: 300
     port: CONST.PORT.BROWSERSYNC
   return
