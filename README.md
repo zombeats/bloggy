@@ -72,7 +72,7 @@ For example, if you want to use the `en_EN` version, just add:
 
 ## Development
 
-1. Install theme dev dependencies: `npm install`.
+1. Install theme dev dependencies: `npm install && bower install`.
 2. setup dev environment: `gulp`.
 3. Make a PR per each improvement :-).
 
