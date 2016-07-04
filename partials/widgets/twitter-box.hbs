@@ -1,12 +1,9 @@
-{{! TODO: Extract twitter handle slug as Ghost variable }}
-{{! TODO: Extract twitter description as Ghost variable }}
-
 <section class="twitter-box twitter-box-main widget">
     <div class="twitter-box-profilepic"><img src="{{asset "images/logo.png"}}" alt="Twitter profile picture" /></div>
     <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
     <div class="twitter-box-content">
         <h4>Zombeats</h4>
         <p>Tu Comunidad de Beatbox en Español. Campeonatos, Historias, Quedadas, Vídeos...</p>
-        <a href="https://twitter.com/zombeats_es" class="twitter-follow-button" data-show-count="true">Seguir @zombeats_es</a>
+        <a href="{{twitter_url}}" class="twitter-follow-button" data-show-count="true">Seguir {{twitter}}</a>
     </div>
 </section>
