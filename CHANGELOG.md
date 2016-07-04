@@ -1,3 +1,16 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2016-07-04)
+
+* added bower install instruction to installation ([e150b15](https://github.com/kikobeats/bloggy/commit/e150b15))
+* added template file to watcher/browsersync task ([90e2565](https://github.com/kikobeats/bloggy/commit/90e2565))
+* added twitter handle ([858791f](https://github.com/kikobeats/bloggy/commit/858791f))
+* cleaned up comments ([0c73d9c](https://github.com/kikobeats/bloggy/commit/0c73d9c))
+* commented widgets ([59489f1](https://github.com/kikobeats/bloggy/commit/59489f1))
+* extract twitter handle as Ghost variable ([222f60c](https://github.com/kikobeats/bloggy/commit/222f60c))
+* fixed template watch task ([4629869](https://github.com/kikobeats/bloggy/commit/4629869))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-03-05)
 
