@@ -122,12 +122,6 @@
     max-width: 100%;
     margin: 1.5em auto;
 
-    + em {
-      display: block;
-      text-align: center;
-      font-size: 12px;
-    }
-
     @include breakpoint(500px) {
       margin: 1.6em auto;
     }

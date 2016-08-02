@@ -108,6 +108,12 @@ blockquote > p {
   word-wrap: break-word;
 }
 
+figcaption {
+  font-size: 90%;
+  font-style: italic;
+  text-align: center;
+}
+
 .wrap {
   position: relative;
 }
