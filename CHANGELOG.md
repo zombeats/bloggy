@@ -1,3 +1,10 @@
+<a name="1.1.2"></a>
+## 1.1.2 (2016-08-02)
+
+* Add figcaption style ([96628b7](https://github.com/kikobeats/bloggy/commit/96628b7))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2016-07-04)
 
