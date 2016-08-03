@@ -7,11 +7,11 @@
 </p>
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/bloggy.svg?style=flat-square)
-![Ghost version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
-![Node version](https://img.shields.io/node/v/bloggy.svg?style=flat-square)
+![Ghost version](https://img.shields.io/badge/Ghost->%3D%200.8.x-brightgreen.svg?style=flat-square)
+![Node version](https://img.shields.io/badge/node-%5E4.2.0-brightgreen.svg?style=flat-square)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
-> Brand theme for Ghost.
+> Brand theme for Ghost. [styleguide](https://zombeats.es/styleguide/) and [styleguide featured](https://zombeats.es/styleguide-featured/).
 
 ## Introduction
 
@@ -83,4 +83,3 @@ For example, if you want to use the `en_EN` version, just add:
 ## License
 
 MIT © [Kiko Beats](kikobeats.com)
- 
