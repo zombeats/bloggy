@@ -3,7 +3,7 @@
   "description": "Branding theme for Ghost",
   "homepage": "https://github.com/Kikobeats/bloggy",
   "version": "1.1.2",
-  "main": "./index.js",
+  "main": "index.js",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
@@ -44,7 +44,7 @@
     "underscore.string": "latest"
   },
   "engines": {
-    "node": ">= 4"
+    "node": "^4.2.0"
   },
   "scripts": {
     "test": "sh test/test.sh"
