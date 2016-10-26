@@ -1,22 +1,24 @@
 # -- Dependencies --------------------------------------------------------------
 
 gulp        = require 'gulp'
+gulpif      = require 'gulp-if'
 gutil       = require 'gulp-util'
 sass        = require 'gulp-sass'
 concat      = require 'gulp-concat'
 coffee      = require 'gulp-coffee'
 header      = require 'gulp-header'
 uglify      = require 'gulp-uglify'
-cssmin      = require 'gulp-cssmin'
+cssnano     = require 'gulp-cssnano'
 addsrc      = require 'gulp-add-src'
 changed     = require 'gulp-changed'
-shorthand    = require 'gulp-shorthand'
 pkg         = require './package.json'
 _s          = require 'underscore.string'
 prefix      = require 'gulp-autoprefixer'
 strip       = require 'gulp-strip-css-comments'
 browserSync = require 'browser-sync'
 reload      = browserSync.reload
+
+isProduction = process.env.NODE_ENV is 'production'
 
 CONST =
   DEFAULT_LANG : 'en_US'
@@ -67,13 +69,12 @@ gulp.task 'css', ->
   gulp.src src.css.vendor
   .pipe changed dist.css
   .pipe addsrc src.sass.main
-  .pipe sass().on "error", gutil.log
+  .pipe sass().on('error', sass.logError)
   .pipe concat dist.name + '.css'
-  .pipe prefix()
-  .pipe strip all: true
-  .pipe shorthand()
-  .pipe cssmin()
-  .pipe header banner, pkg: pkg
+  .pipe gulpif(isProduction, prefix())
+  .pipe gulpif(isProduction, strip all: true)
+  .pipe gulpif(isProduction, cssnano())
+  .pipe gulpif(isProduction, header banner, pkg: pkg)
   .pipe gulp.dest dist.css
   return
 
@@ -86,8 +87,8 @@ gulp.task 'js i18n', ->
     .pipe coffee().on 'error', gutil.log
     .pipe addsrc src.js.vendor
     .pipe concat dist.name + ".#{lang}.js"
-    .pipe uglify()
-    .pipe header banner, pkg: pkg
+    .pipe gulpif(isProduction, uglify())
+    .pipe gulpif(isProduction, header banner, pkg: pkg)
     .pipe gulp.dest dist.js
     return
 
@@ -97,8 +98,8 @@ gulp.task 'js default', ->
   .pipe coffee().on 'error', gutil.log
   .pipe addsrc src.js.vendor
   .pipe concat dist.name + ".#{CONST.DEFAULT_LANG}.js"
-  .pipe uglify()
-  .pipe header banner, pkg: pkg
+  .pipe gulpif(isProduction, uglify())
+  .pipe gulpif(isProduction, header banner, pkg: pkg)
   .pipe gulp.dest dist.js
   return
 
