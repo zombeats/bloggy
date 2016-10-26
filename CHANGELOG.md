@@ -1,3 +1,10 @@
+<a name="1.1.4"></a>
+## 1.1.4 (2016-10-26)
+
+* Update build process ([c939370](https://github.com/kikobeats/bloggy/commit/c939370))
+
+
+
 <a name="1.1.3"></a>
 ## 1.1.3 (2016-10-26)
 
