@@ -1,3 +1,14 @@
+<a name="1.1.3"></a>
+## 1.1.3 (2016-10-26)
+
+* Fix tags size ([e0bee40](https://github.com/kikobeats/bloggy/commit/e0bee40))
+* Fix typo ([462390f](https://github.com/kikobeats/bloggy/commit/462390f))
+* Fix typo ([e3d2ba5](https://github.com/kikobeats/bloggy/commit/e3d2ba5))
+* Update docs ([56f52d2](https://github.com/kikobeats/bloggy/commit/56f52d2))
+* Use same node version than Ghost engine ([5135e72](https://github.com/kikobeats/bloggy/commit/5135e72))
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2016-08-02)
 

@@ -1,6 +1,6 @@
 /**
  * bloggy - Branding theme for Ghost
- * @version 1.1.2
+ * @version 1.1.3
  * @link    https://github.com/Kikobeats/bloggy
  * @author  Kiko Beats (https://github.com/Kikobeats)
  * @license MIT
