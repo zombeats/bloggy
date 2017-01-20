@@ -44,7 +44,7 @@
     "underscore.string": "latest"
   },
   "engines": {
-    "node": "latest"
+    "node": "^4.2.0"
   },
   "scripts": {
     "test": "sh test/test.sh"
