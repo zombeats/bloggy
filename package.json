@@ -17,10 +17,9 @@
     "url": "https://github.com/Kikobeats/bloggy/issues"
   },
   "keywords": [
-    "Blog",
-    "Brand",
-    "Ghost",
-    "Theme"
+    "brand",
+    "ghost",
+    "theme"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -47,7 +46,9 @@
     "node": "^4.2.0"
   },
   "scripts": {
-    "test": "sh test/test.sh"
+    "test": "sh test/test.sh",
+    "build": "NODE_ENV=production gulp build",
+    "start": "NODE_ENV=development gulp"
   },
   "license": "MIT"
 }

@@ -14,12 +14,9 @@
     "url": "https://github.com/Kikobeats/bloggy/issues"
   },
   "keywords": [
-    "elegant",
+    "brand",
     "ghost",
-    "minimalism",
-    "theme",
-    "uno",
-    "zen"
+    "theme"
   ],
   "dependencies": {
     "fastclick": "latest",

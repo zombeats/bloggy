@@ -14,7 +14,7 @@ plugins:
 
     'Compiling browser version':
       plugin: 'bumped-terminal'
-      command: 'NODE_ENV=production gulp build'
+      command: 'npm run build'
 
     'Generating CHANGELOG file':
       plugin: 'bumped-changelog'
