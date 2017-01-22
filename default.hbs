@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{meta_title}}</title>
-    {{> meta}}
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,400,200" />
-    <link rel="stylesheet" type="text/css" href="{{asset "css/bloggy.css"}}" />
-    {{ghost_head}}
-  </head>
-  <body class="{{body_class}}">
-    <div id="fb-root"></div>
-    {{> widgets/subscribe-banner}}
-    <header id="global-header" class="global-header navbar">
-      {{navigation}}
-    </header>
-    <main role="main">
-      <div class="page-wrapper">
-        {{{body}}}
-        <div class="clearfix"></div>
-      </div>
-    </main>
-    <div class="modal fade" id="blogsubscribe" tabindex="-1" role="dialog" aria-labelledby="Email subscription modal" aria-hidden="true">
+
+<head>
+  <title>{{meta_title}}</title>
+  {{> meta}}
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bloggy.css"}}" /> {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+  <div id="fb-root"></div>
+  {{> widgets/subscribe-banner}}
+  <header id="global-header" class="global-header navbar">
+    {{navigation}}
+  </header>
+  <main role="main">
+    <div class="page-wrapper">
+      {{{body}}}
+      <div class="clearfix"></div>
+    </div>
+  </main>
+  <div class="modal fade" id="blogsubscribe" tabindex="-1" role="dialog" aria-labelledby="Email subscription modal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <header class="modal-header">
@@ -38,10 +39,8 @@
       </div>
     </div>
   </div>
-    <div class="clearfix"></div>
-    {{> footer}}
-    {{ghost_foot}}
-    {{> google-analytics}}
-    {{> share/scripts/twitter}}
-  </body>
+  <div class="clearfix"></div>
+  {{> footer}} {{ghost_foot}} {{> google-analytics}} {{> share/scripts/twitter}}
+</body>
+
 </html>
