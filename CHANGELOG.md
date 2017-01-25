@@ -1,3 +1,25 @@
+<a name="1.1.5"></a>
+## 1.1.5 (2017-01-25)
+
+* Add headers font variable ([d4e1125](https://github.com/kikobeats/bloggy/commit/d4e1125))
+* Add variable colours ([ddce239](https://github.com/kikobeats/bloggy/commit/ddce239))
+* Adjust max line length ([cf4fda0](https://github.com/kikobeats/bloggy/commit/cf4fda0))
+* Change a:hover behaviour ([39f5cdd](https://github.com/kikobeats/bloggy/commit/39f5cdd))
+* Change colours ([570ea13](https://github.com/kikobeats/bloggy/commit/570ea13))
+* Change main font Open Sans → Helvetica ([5600359](https://github.com/kikobeats/bloggy/commit/5600359))
+* Fix Logo ([89d68d0](https://github.com/kikobeats/bloggy/commit/89d68d0))
+* new design 2017 ([e137787](https://github.com/kikobeats/bloggy/commit/e137787))
+* Subscribe-banner button color dark -> blue ([42b2ae6](https://github.com/kikobeats/bloggy/commit/42b2ae6))
+* Update meta ([abd18cf](https://github.com/kikobeats/bloggy/commit/abd18cf))
+* Use same LTS version than Ghost ([ee26578](https://github.com/kikobeats/bloggy/commit/ee26578))
+* chore: drop support for Node.js 0.10 ([4dd24ef](https://github.com/kikobeats/bloggy/commit/4dd24ef))
+
+
+### BREAKING CHANGE
+
+* This module no longer supports Node.js 0.10
+
+
 <a name="1.1.4"></a>
 ## 1.1.4 (2016-10-26)
 
