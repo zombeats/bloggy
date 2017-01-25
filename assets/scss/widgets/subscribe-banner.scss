@@ -16,10 +16,10 @@
 
   .button {
     color: $white;
-    background: $darkgrey;
+    background: $blue;
 
     &:hover {
-      background: #111;
+      background: darken($blue, 20%);
     }
   }
 

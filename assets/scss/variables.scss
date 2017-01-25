@@ -8,11 +8,14 @@ $default-transition-duration : 0.3s;
 @import "../vendor/compass-breakpoint/stylesheets/breakpoint";
 @include breakpoint-set('default feature', max-width);
 
-$sans-font                   : "Open Sans", sans-serif;
+$sans-font                   : Helvetica, sans-serif;
 $serif-font                  : serif;
+
+$headers-fonts               : "Cabin";
 $code-font                   : Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 $quote-font                  : "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
 $input-font                  : inherit;
+
 
 $font-weight-thin            : 200;
 $font-weight-normal          : 400;
@@ -45,8 +48,12 @@ $midbrown                    : #c0bfb6;
 $lightbrown                  : #edece4;
 $white                       : #fff;
 
-$blue                        : #3498db;
-$red                         : #e74c3c;
+$blue                        : #6496cd;
+$blue-light                  : #84ccd8;
+$red                         : #ef7b45;
 $orange                      : #e67e22;
 $green                       : #2ecc71;
 $yellow                      : #f1c40f;
+
+$dark                        : #042a2b;
+$light                       : #cdedf6;

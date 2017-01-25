@@ -500,7 +500,6 @@ nav li a:before {
     speak: none;
     line-height: 1;
     position: absolute;
-    top: 4px;
     left: 4px;
     max-width: 22px;
   }
@@ -509,6 +508,8 @@ nav li a:before {
     color: rgba(60, 80, 90, 0.7);
     margin-left: 40px;
     font-size: 16px;
+    font-family: $headers-fonts;
+    text-transform: uppercase;
     font-weight: $font-weight-bold;
   }
 }
@@ -531,7 +532,7 @@ nav li a:before {
 .global-header .blog-logo {
   text-decoration: none;
   position: absolute;
-  top: 15px;
+  top: 19px;
   left: 15px;
        transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
