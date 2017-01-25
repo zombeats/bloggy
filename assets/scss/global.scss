@@ -28,6 +28,17 @@
   text-shadow: none;
 }
 
+p > a {
+  padding: 3px;
+  color: $blue;
+}
+
+p > a:hover{
+  background-color: $blue;
+  text-decoration: none;
+  color: $white;
+}
+
 h1,
 h2,
 h3,
@@ -338,9 +349,9 @@ figcaption {
   color: #9eabb3;
 }
 
-.post-meta a:hover {
-  text-decoration: underline;
-}
+// .post-meta a:hover {
+//   text-decoration: underline;
+// }
 
 .more-links {
   margin: 2em 0;
