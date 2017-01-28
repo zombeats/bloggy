@@ -43,7 +43,7 @@
     "underscore.string": "latest"
   },
   "engines": {
-    "node": "^4.2.0"
+    "node": "^6.9.0"
   },
   "scripts": {
     "build": "NODE_ENV=production gulp build",

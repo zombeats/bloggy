@@ -19,7 +19,7 @@
 
 ## Features
 
-- i18n support. Currently `en_US`/`en_ES` supported.
+- Support for i18n. Currently `en_US`/`en_ES` implemented.
 - Google Analytics integration.
 - Newsletter integration powered by Mailchimp.
 - Featured and Static post views.
