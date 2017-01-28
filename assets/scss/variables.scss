@@ -10,8 +10,7 @@ $default-transition-duration : 0.3s;
 
 $sans-font                   : Helvetica, sans-serif;
 $serif-font                  : serif;
-
-$headers-fonts               : "Cabin";
+$headers-fonts               : "Cabin", Helvetica, sans-serif;
 $code-font                   : Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 $quote-font                  : "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
 $input-font                  : inherit;
