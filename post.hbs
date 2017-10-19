@@ -13,7 +13,7 @@
         <h1 class="post-title">{{{title}}}</h1>
 
         <section class="post-meta">
-          <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+          <img class="author-img" src="{{author.profile_image}}" alt="Author image" nopin="nopin" />
           <span class="author-name">{{author}}</span>
           <span class="prefix-date">on the</span>
           <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
@@ -27,7 +27,7 @@
           {{!> share }}
 
           <section class="author">
-            <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+            <img class="author-img" src="{{author.profile_image}}" alt="Author image" nopin="nopin" />
             <div class="author-meta">
               <h4>{{author.name}}</h4>
               <p>{{{author.bio}}} <a href="{{author.website}}">{{author.website}}</a></p>
@@ -36,7 +36,7 @@
 
           <section class="read-next">
             {{#next_post}}
-              <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+              <a class="read-next-story {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
                 <section class="post">
                   <h2>{{title}}</h2>
                   <p>{{excerpt words="19"}}&hellip;</p>

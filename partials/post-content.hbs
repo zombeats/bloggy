@@ -1,7 +1,7 @@
 <section class="post-content">
-  {{#if image}}
+  {{#if feature_image}}
     {{#unless featured}}
-      <img src="{{image}}" alt="Post image" />
+      <img src="{{img_url feature_image}}" alt="Post image" />
     {{/unless}}
   {{/if}}
   {{content}}
